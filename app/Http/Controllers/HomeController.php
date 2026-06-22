@@ -4,11 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Course;
-use App\Models\Faq;
-use App\Models\Gallery;
-use App\Models\Seo;
-use App\Models\Setting;
-use App\Models\Testimonial;
 use Illuminate\Http\Response;
 use Illuminate\View\View;
 
@@ -16,67 +11,18 @@ class HomeController extends Controller
 {
     public function index(): View
     {
-        $courses = Course::all();
-        $popularCourses = Course::where('is_popular', true)->get();
-        $blogs = Blog::where('status', 'published')->orderBy('created_at', 'desc')->take(3)->get();
-        $gallery = Gallery::orderBy('created_at', 'desc')->get();
-        $testimonials = Testimonial::all();
-        $faqs = Faq::where('category', 'general')->get();
-
-        // Settings key-value pairs
-        $settings = Setting::pluck('value', 'key')->all();
-
-        // Page SEO
-        $seo = Seo::where('page_name', 'home')->first();
-
-        return view('index', compact(
-            'courses',
-            'popularCourses',
-            'blogs',
-            'gallery',
-            'testimonials',
-            'faqs',
-            'settings',
-            'seo'
-        ));
-    }
-
-    public function contact(): View
-    {
-        $settings = Setting::pluck('value', 'key')->all();
-        $seo = Seo::where('page_name', 'contact')->first();
-        $courses = Course::select('name')->get();
-
-        return view('contact', compact('settings', 'seo', 'courses'));
-    }
-
-    public function about(): View
-    {
-        $seo = Seo::where('page_name', 'about')->first();
-        $testimonials = Testimonial::all();
-        $faqs = Faq::where('category', 'general')->get();
-
-        return view('about', compact('seo', 'testimonials', 'faqs'));
-    }
-
-    public function services(): View
-    {
-        $seo = Seo::where('page_name', 'services')->first();
-
-        return view('services', compact('seo'));
-    }
-
-    public function team(): View
-    {
-        $seo = Seo::where('page_name', 'team')->first();
-
-        return view('team', compact('seo'));
+        return view('index');
     }
 
     public function sitemap(): Response
     {
-        $courses = Course::select('slug', 'updated_at')->get();
-        $blogs = Blog::where('status', 'published')->select('slug', 'updated_at')->get();
+        try {
+            $courses = Course::select('slug', 'updated_at')->get();
+            $blogs = Blog::where('status', 'published')->select('slug', 'updated_at')->get();
+        } catch (\Throwable $e) {
+            $courses = collect();
+            $blogs = collect();
+        }
 
         $xml = '<?xml version="1.0" encoding="UTF-8"?>';
         $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';

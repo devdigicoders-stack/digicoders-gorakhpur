@@ -14,18 +14,18 @@
 
     <!-- Gorakhpur Best SEO Optimized Meta Tags -->
 
-<title>
-Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders Technologies Pvt. Ltd.
-</title>
+    <title>
+        Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders
+        Technologies Pvt. Ltd.
+    </title>
 
-<meta name="title"
-    content="Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders Technologies Pvt. Ltd.">
+    <meta name="title"
+        content="Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders Technologies Pvt. Ltd.">
 
-<meta name="description"
-    content="DigiCoders Technologies Pvt. Ltd. is the No.1 IT Training Institute & Software Development Company in Gorakhpur offering Summer Training, Winter Training, Industrial Training, Internship, Apprenticeship, Live Projects and Professional Courses in Python, Java, PHP, Laravel, MERN Stack, React JS, Android, Data Science, AI, Machine Learning, Web Development, Digital Marketing and Full Stack Development with Certificate, Placement Assistance and Real-Time Projects.">
+    <meta name="description"
+        content="DigiCoders Technologies Pvt. Ltd. is the No.1 IT Training Institute & Software Development Company in Gorakhpur offering Summer Training, Winter Training, Industrial Training, Internship, Apprenticeship, Live Projects and Professional Courses in Python, Java, PHP, Laravel, MERN Stack, React JS, Android, Data Science, AI, Machine Learning, Web Development, Digital Marketing and Full Stack Development with Certificate, Placement Assistance and Real-Time Projects.">
 
-<meta name="keywords"
-    content="
+    <meta name="keywords" content="
 best summer training in gorakhpur,
 best industrial training in gorakhpur,
 best internship in gorakhpur,
@@ -77,77 +77,67 @@ IT Training Institute GIDA Gorakhpur,
 software company GIDA Gorakhpur,
 ">
 
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 
-<meta name="author" content="DigiCoders Technologies Pvt. Ltd.">
+    <meta name="author" content="DigiCoders Technologies Pvt. Ltd.">
 
-<meta name="geo.region" content="IN-UP">
-<meta name="geo.placename" content="Gorakhpur">
-<meta name="geo.position" content="26.708573;83.376822">
-<meta name="ICBM" content="26.708573,83.376822">
+    <meta name="geo.region" content="IN-UP">
+    <meta name="geo.placename" content="Gorakhpur">
+    <meta name="geo.position" content="26.708573;83.376822">
+    <meta name="ICBM" content="26.708573,83.376822">
 
-<link rel="canonical" href="{{ request()->url() }}">
+    <link rel="canonical" href="{{ request()->url() }}">
 
-<!-- Open Graph -->
+    <!-- Open Graph -->
 
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="DigiCoders Technologies">
-<meta property="og:title"
-    content="Best Summer Training & Internship Institute in Gorakhpur | DigiCoders Technologies">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DigiCoders Technologies">
+    <meta property="og:title"
+        content="Best Summer Training & Internship Institute in Gorakhpur | DigiCoders Technologies">
 
-<meta property="og:description"
-    content="Join No.1 IT Training Institute in Gorakhpur for Summer Training, Internship, Industrial Training and Live Projects in Python, Java, PHP, Laravel, MERN Stack, Android, AI and Data Science with Placement Assistance.">
+    <meta property="og:description"
+        content="Join No.1 IT Training Institute in Gorakhpur for Summer Training, Internship, Industrial Training and Live Projects in Python, Java, PHP, Laravel, MERN Stack, Android, AI and Data Science with Placement Assistance.">
 
-<meta property="og:image"
-    content="{{ asset('assets/images/seo/home-og.webp') }}">
+    <meta property="og:image" content="{{ asset('assets/images/seo/home-og.webp') }}">
 
-<meta property="og:url"
-    content="{{ request()->url() }}">
+    <meta property="og:url" content="{{ request()->url() }}">
 
-<meta property="og:locale"
-    content="en_IN">
+    <meta property="og:locale" content="en_IN">
 
-<!-- Twitter -->
+    <!-- Twitter -->
 
-<meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary_large_image">
 
-<meta name="twitter:title"
-    content="Best Summer Training & Internship in Gorakhpur | DigiCoders Technologies">
+    <meta name="twitter:title" content="Best Summer Training & Internship in Gorakhpur | DigiCoders Technologies">
 
-<meta name="twitter:description"
-    content="Professional Summer Training, Internship, Industrial Training, Apprenticeship and Software Development Services in Gorakhpur with Live Projects & Placement Support.">
+    <meta name="twitter:description"
+        content="Professional Summer Training, Internship, Industrial Training, Apprenticeship and Software Development Services in Gorakhpur with Live Projects & Placement Support.">
 
-<meta name="twitter:image"
-    content="{{ asset('assets/images/seo/home-og.webp') }}">
+    <meta name="twitter:image" content="{{ asset('assets/images/seo/home-og.webp') }}">
 
-<!-- Extra SEO -->
+    <!-- Extra SEO -->
 
-<meta name="theme-color" content="#0d6efd">
+    <meta name="theme-color" content="#0d6efd">
 
-<meta name="language" content="English">
+    <meta name="language" content="English">
 
-<meta name="distribution" content="global">
+    <meta name="distribution" content="global">
 
-<meta name="rating" content="general">
+    <meta name="rating" content="general">
 
-<meta name="revisit-after" content="1 days">
+    <meta name="revisit-after" content="1 days">
 
-<meta name="coverage" content="Worldwide">
+    <meta name="coverage" content="Worldwide">
 
-<meta name="target" content="Students, B.Tech, BCA, MCA, Diploma, IT Professionals">
+    <meta name="target" content="Students, B.Tech, BCA, MCA, Diploma, IT Professionals">
 
-<meta name="subject"
-    content="Summer Training, Internship, Industrial Training, Software Development">
+    <meta name="subject" content="Summer Training, Internship, Industrial Training, Software Development">
 
-<meta name="classification"
-    content="Education, IT Training, Internship, Software Development">
+    <meta name="classification" content="Education, IT Training, Internship, Software Development">
 
-<meta name="copyright"
-    content="DigiCoders Technologies Pvt. Ltd.">
+    <meta name="copyright" content="DigiCoders Technologies Pvt. Ltd.">
 
-<meta name="reply-to"
-    content="info@digicoders.in">
-```
+    <meta name="reply-to" content="digicoderstech@gmail.com">
 
     <!-- Preconnect & DNS Prefetch for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -188,16 +178,17 @@ software company GIDA Gorakhpur,
         "logo": "{{ asset('assets/images/logo.png') }}",
         "contactPoint": {
             "{{ '@type' }}": "ContactPoint",
-            "telephone": "{{ $settings['contact_phone'] ?? '9801017529' }}",
+            "telephone": "9801017529",
             "contactType": "customer service",
             "areaServed": "IN",
             "availableLanguage": "English, Hindi"
         },
         "sameAs": [
-            "{{ $settings['facebook_url'] ?? 'https://facebook.com/digicoders' }}",
-            "{{ $settings['instagram_url'] ?? 'https://instagram.com/digicoders_technologies' }}",
-            "{{ $settings['linkedin_url'] ?? 'https://linkedin.com/company/digicoders-technologies' }}",
-            "{{ $settings['youtube_url'] ?? 'https://youtube.com' }}"
+            "https://www.facebook.com/DigiCodersTech/",
+            "https://www.instagram.com/digicoderstech",
+            "https://www.linkedin.com/company/digicoders/",
+            "https://www.youtube.com/@digicoders",
+            "https://www.whatsapp.com/channel/0029VaDTIxW5EjxzOyubYT3l"
         ]
     }
     </script>
@@ -209,7 +200,7 @@ software company GIDA Gorakhpur,
         "image": "{{ asset('assets/images/seo/home-og.webp') }}",
         "{{ '@id' }}": "{{ url('/') }}",
         "url": "{{ url('/') }}",
-        "telephone": "{{ $settings['contact_phone'] ?? '9801017529' }}",
+        "telephone": "9801017529",
         "address": {
             "{{ '@type' }}": "PostalAddress",
             "streetAddress": "INSIDE MAIN BUILDING, BUDDHA INSTITUTE OF TECHNOLOGY, CL-1, SECTOR-7, GIDA",
@@ -233,8 +224,8 @@ software company GIDA Gorakhpur,
                 "Friday",
                 "Saturday"
             ],
-            "opens": "09:00",
-            "closes": "18:30"
+            "opens": "10:00",
+            "closes": "19:00"
         }
     }
     </script>
@@ -276,7 +267,7 @@ software company GIDA Gorakhpur,
         document.body.style.overflow = 'hidden';
 
         // Preloader fadeout logic
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             const preloader = document.getElementById('preloader');
             if (preloader) {
                 preloader.classList.add('fade-out');
@@ -288,7 +279,7 @@ software company GIDA Gorakhpur,
         });
 
         // Safety fallback: auto-hide after 2.5 seconds
-        setTimeout(function() {
+        setTimeout(function () {
             const preloader = document.getElementById('preloader');
             if (preloader && !preloader.classList.contains('fade-out')) {
                 preloader.classList.add('fade-out');
@@ -311,17 +302,17 @@ software company GIDA Gorakhpur,
     <div class="topbar-strip d-none d-lg-flex align-items-center">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center gap-4">
-                <a href="tel:{{ $settings['contact_phone'] ?? '9801017529' }}" class="topbar-link">
+                <a href="tel:9801017529" class="topbar-link">
                     <i class="bi bi-telephone-fill"></i>
-                    +91-{{ $settings['contact_phone'] ?? '9801017529' }}
+                    +91-9801017529
                 </a>
-                <a href="mailto:{{ $settings['contact_email'] ?? 'digicoderstech@gmail.com' }}" class="topbar-link">
+                <a href="mailto:digicoderstech@gmail.com" class="topbar-link">
                     <i class="bi bi-envelope-fill"></i>
-                    {{ $settings['contact_email'] ?? 'digicoderstech@gmail.com' }}
+                    digicoderstech@gmail.com
                 </a>
                 <span class="topbar-link" style="cursor: default;">
                     <i class="bi bi-geo-alt-fill"></i>
-                    Gorakhpur, Uttar Pradesh
+                    Gida, Gorakhpur, Uttar Pradesh
                 </span>
             </div>
             <div class="d-flex align-items-center gap-3">
@@ -331,23 +322,23 @@ software company GIDA Gorakhpur,
                 </span>
                 <div class="topbar-divider"></div>
                 <div class="d-flex align-items-center gap-2">
-                    <a href="{{ $settings['facebook_url'] ?? '#' }}" target="_blank" class="topbar-social-icon"
+                    <a href="https://www.facebook.com/DigiCodersTech/" target="_blank" class="topbar-social-icon"
                         aria-label="Facebook">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="{{ $settings['instagram_url'] ?? '#' }}" target="_blank" class="topbar-social-icon"
+                    <a href="https://www.instagram.com/digacoderstech" target="_blank" class="topbar-social-icon"
                         aria-label="Instagram">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="{{ $settings['linkedin_url'] ?? '#' }}" target="_blank" class="topbar-social-icon"
+                    <a href="https://www.linkedin.com/company/digicoders/" target="_blank" class="topbar-social-icon"
                         aria-label="LinkedIn">
                         <i class="bi bi-linkedin"></i>
                     </a>
-                    <a href="{{ $settings['youtube_url'] ?? '#' }}" target="_blank" class="topbar-social-icon"
+                    <a href="https://www.youtube.com/@digicoders" target="_blank" class="topbar-social-icon"
                         aria-label="YouTube">
                         <i class="bi bi-youtube"></i>
                     </a>
-                    <a href="{{ $settings['whatsapp_url'] ?? '#' }}" target="_blank"
+                    <a href="https://www.whatsapp.com/channel/0029VaDTIxW5EjxzOyubYT3l" target="_blank"
                         class="topbar-social-icon topbar-social-whatsapp" aria-label="WhatsApp">
                         <i class="bi bi-whatsapp"></i>
                     </a>
@@ -486,8 +477,7 @@ software company GIDA Gorakhpur,
             <div class="container mobile-nav-body">
                 <a class="mobile-nav-link {{ request()->routeIs('home') ? 'is-active' : '' }}"
                     href="{{ route('home') }}">Home</a>
-                <a class="mobile-nav-link {{ request()->routeIs('courses.*') ? 'is-active' : '' }}"
-                    href="{{ route('courses.index') }}">Courses</a>
+              
                 <a class="mobile-nav-link" href="https://thedigicoders.com/about" target="_blank"
                     rel="noopener noreferrer">About Us</a>
                 <a class="mobile-nav-link" href="https://thedigicoders.com/our-expert" target="_blank"
@@ -533,23 +523,23 @@ software company GIDA Gorakhpur,
                                 We provide
                                 practical-based training in coding, systems architecture, and generative AI models.</p>
                             <div class="footer-social-row">
-                                <a href="{{ $settings['facebook_url'] ?? '#' }}" target="_blank" aria-label="Facebook"
+                                <a href="https://www.facebook.com/DigiCodersTech/" target="_blank" aria-label="Facebook"
                                     class="footer-social-icon">
                                     <i class="bi bi-facebook"></i>
                                 </a>
-                                <a href="{{ $settings['instagram_url'] ?? '#' }}" target="_blank" aria-label="Instagram"
+                                <a href="https://www.instagram.com/digacoderstech" target="_blank" aria-label="Instagram"
                                     class="footer-social-icon">
                                     <i class="bi bi-instagram"></i>
                                 </a>
-                                <a href="{{ $settings['linkedin_url'] ?? '#' }}" target="_blank" aria-label="LinkedIn"
+                                <a href="https://www.linkedin.com/company/digicoders/" target="_blank" aria-label="LinkedIn"
                                     class="footer-social-icon">
                                     <i class="bi bi-linkedin"></i>
                                 </a>
-                                <a href="{{ $settings['youtube_url'] ?? '#' }}" target="_blank" aria-label="YouTube"
+                                <a href="https://www.youtube.com/@digicoders" target="_blank" aria-label="YouTube"
                                     class="footer-social-icon">
                                     <i class="bi bi-youtube"></i>
                                 </a>
-                                <a href="{{ $settings['whatsapp_url'] ?? '#' }}" target="_blank" aria-label="WhatsApp"
+                                <a href="https://www.whatsapp.com/channel/0029VaDTIxW5EjxzOyubYT3l" target="_blank" aria-label="WhatsApp"
                                     class="footer-social-icon">
                                     <i class="bi bi-whatsapp"></i>
                                 </a>
@@ -605,8 +595,8 @@ software company GIDA Gorakhpur,
                                 </div>
                                 <div>
                                     <span class="footer-contact-label">Call Us</span>
-                                    <a href="tel:{{ $settings['contact_phone'] ?? '9801017529' }}"
-                                        class="footer-contact-value">{{ $settings['contact_phone'] ?? '9801017529' }}</a>
+                                    <a href="tel:9801017529"
+                                        class="footer-contact-value">9801017529</a>
                                 </div>
                             </div>
                             <div class="footer-contact-item">
@@ -615,9 +605,8 @@ software company GIDA Gorakhpur,
                                 </div>
                                 <div>
                                     <span class="footer-contact-label">Email</span>
-                                    <a href="mailto:{{ $settings['contact_email'] ?? 'digicoderstech@gmail.com' }}"
-                                        class="footer-contact-value">{{ $settings['contact_email'] ??
-                                        'digicoderstech@gmail.com' }}</a>
+                                    <a href="mailto:digicoderstech@gmail.com"
+                                        class="footer-contact-value">digicoderstech@gmail.com</a>
                                 </div>
                             </div>
                             <div class="footer-contact-item">
@@ -626,7 +615,7 @@ software company GIDA Gorakhpur,
                                 </div>
                                 <div>
                                     <span class="footer-contact-label">Working Hours</span>
-                                    <span class="footer-contact-value">Mon – Sat: 9:00 AM – 7:00 PM</span>
+                                    <span class="footer-contact-value">Mon – Sat: 10:00 AM – 7:00 PM</span>
                                 </div>
                             </div>
                         </div>
@@ -646,16 +635,17 @@ software company GIDA Gorakhpur,
         </div>
     </footer>
 
-    <!-- Beautiful Premium Floating Communication Widget (Left Side) -->
     <div class="floating-contact-widget">
         <!-- Call Button -->
-        <a href="tel:{{ $settings['contact_phone'] ?? '9801017529' }}" class="floating-btn float-call" aria-label="Call Us">
+        <a href="tel:9801017529" class="floating-btn float-call"
+            aria-label="Call Us">
             <i class="bi bi-telephone-fill"></i>
             <span class="floating-tooltip">Call Us</span>
         </a>
 
         <!-- WhatsApp Button -->
-        <a href="https://wa.me/919801017529" target="_blank" rel="noopener noreferrer" class="floating-btn float-whatsapp" aria-label="WhatsApp Chat">
+        <a href="https://wa.me/919801017529" target="_blank" rel="noopener noreferrer"
+            class="floating-btn float-whatsapp" aria-label="WhatsApp Chat">
             <i class="bi bi-whatsapp"></i>
             <span class="floating-tooltip">WhatsApp Chat</span>
         </a>
@@ -664,8 +654,10 @@ software company GIDA Gorakhpur,
     <!-- Premium Back to Top Button with Progress Ring -->
     <button id="backToTop" class="back-to-top-btn" aria-label="Back to Top">
         <svg class="progress-ring" width="50" height="50">
-            <circle class="progress-ring__circle-bg" stroke="rgba(255, 255, 255, 0.08)" stroke-width="3" fill="transparent" r="22" cx="25" cy="25"/>
-            <circle id="progressRingCircle" class="progress-ring__circle" stroke="var(--secondary, #e76028)" stroke-width="3" fill="transparent" r="22" cx="25" cy="25"/>
+            <circle class="progress-ring__circle-bg" stroke="rgba(255, 255, 255, 0.08)" stroke-width="3"
+                fill="transparent" r="22" cx="25" cy="25" />
+            <circle id="progressRingCircle" class="progress-ring__circle" stroke="var(--secondary, #e76028)"
+                stroke-width="3" fill="transparent" r="22" cx="25" cy="25" />
         </svg>
         <div class="back-to-top-content">
             <i class="bi bi-chevron-up back-to-top-icon"></i>
@@ -675,36 +667,36 @@ software company GIDA Gorakhpur,
 
     <script>
         // Back to top scroll progress logic
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const backToTopBtn = document.getElementById('backToTop');
             const progressCircle = document.getElementById('progressRingCircle');
             const percentText = document.querySelector('.back-to-top-percent');
-            
+
             if (backToTopBtn && progressCircle) {
                 const radius = progressCircle.r.baseVal.value;
                 const circumference = 2 * Math.PI * radius; // 138.23
-                
+
                 // Set initial dasharray
                 progressCircle.style.strokeDasharray = circumference;
                 progressCircle.style.strokeDashoffset = circumference;
-                
+
                 function updateProgress() {
                     const scrollTop = window.scrollY || document.documentElement.scrollTop;
                     const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                    
+
                     if (docHeight > 0) {
                         const scrollPercent = (scrollTop / docHeight) * 100;
                         const roundedPercent = Math.min(Math.round(scrollPercent), 100);
-                        
+
                         // Update percentage text
                         if (percentText) {
                             percentText.textContent = roundedPercent + '%';
                         }
-                        
+
                         // Update progress stroke offset
                         const offset = circumference - (scrollPercent / 100) * circumference;
                         progressCircle.style.strokeDashoffset = offset;
-                        
+
                         // Show/hide button
                         if (scrollTop > 150) {
                             backToTopBtn.classList.add('is-visible');
@@ -715,14 +707,14 @@ software company GIDA Gorakhpur,
                         backToTopBtn.classList.remove('is-visible');
                     }
                 }
-                
+
                 // Initial update and scroll listener
                 updateProgress();
                 window.addEventListener('scroll', updateProgress);
                 window.addEventListener('resize', updateProgress);
-                
+
                 // Click to scroll up smoothly
-                backToTopBtn.addEventListener('click', function() {
+                backToTopBtn.addEventListener('click', function () {
                     window.scrollTo({
                         top: 0,
                         behavior: 'smooth'
@@ -731,7 +723,6 @@ software company GIDA Gorakhpur,
             }
         });
     </script>
-
     <!-- Scripts (CDN base) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

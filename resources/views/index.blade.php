@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
     <!-- 1. Hero Section -->
     <section class="hero-section position-relative">
@@ -379,84 +378,84 @@
             <!-- Swiper Container (inside container for header alignment) -->
             <div class="swiper-marquee-container swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <!-- Slide 1: Saurabh Kumar -->
+                    <!-- Slide 1: Abhishek Singh -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/team-saurabh.png') }}" alt="Saurabh Kumar">
+                        <img src="{{ asset('assets/images/team/Abhishek-Singh-digicoders-gorakhpur.jpeg') }}" alt="Abhishek Singh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
-                            <h4 class="swiper-marquee-title">Saurabh Kumar</h4>
-                            <div class="swiper-marquee-desc">Lead Architect &amp; MD</div>
-                            <p class="swiper-marquee-bio">Directs strategic growth, cloud infrastructure deployments, and
-                                designs systems.</p>
+                            <h4 class="swiper-marquee-title">Abhishek Singh</h4>
+                            <div class="swiper-marquee-desc">Branch Head &amp; Data Analyst</div>
                         </div>
                     </div>
-                    <!-- Slide 2: Abhay Pratap Singh -->
+                    <!-- Slide 2: Muskan -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/team-abhay.png') }}" alt="Abhay Pratap Singh">
+                        <img src="{{ asset('assets/images/team/Muskan-digicoders-gorakhpur.jpeg') }}" alt="Muskan - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
-                            <h4 class="swiper-marquee-title">Abhay Pratap Singh</h4>
-                            <div class="swiper-marquee-desc">Director &amp; Chief Academic Relations</div>
-                            <p class="swiper-marquee-bio">Manages academic relationships, placement training systems, and
-                                enterprise hiring.</p>
+                            <h4 class="swiper-marquee-title">Muskan</h4>
+                            <div class="swiper-marquee-desc">Hr Executive</div>
                         </div>
                     </div>
-                    <!-- Slide 3: Amit Kumar -->
+                    <!-- Slide 3: Priyanshu Singh -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/team-amit.png') }}" alt="Amit Kumar">
+                        <img src="{{ asset('assets/images/team/Priyanshu-Singh-digicoders-gorakhpur.jpeg') }}" alt="Priyanshu Singh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
-                            <h4 class="swiper-marquee-title">Amit Kumar</h4>
-                            <div class="swiper-marquee-desc">Lead Backend Developer</div>
-                            <p class="swiper-marquee-bio">Expert PHP and Laravel engineer. Hands-on mentor for database
-                                operations and API layers.</p>
+                            <h4 class="swiper-marquee-title">Priyanshu Singh</h4>
+                            <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
                         </div>
                     </div>
-                    <!-- Slide 4: Abhishek Shukla -->
+                    <!-- Slide 4: Sarvesh -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/team-abhishek.png') }}" alt="Abhishek Shukla">
+                        <img src="{{ asset('assets/images/team/Sarvesh-digicoders-gorakhpur.jpeg') }}" alt="Sarvesh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
-                            <h4 class="swiper-marquee-title">Abhishek Shukla</h4>
-                            <div class="swiper-marquee-desc">Senior Frontend &amp; UI Lead</div>
-                            <p class="swiper-marquee-bio">Master of responsive web designs. Trainer for Figma prototyping,
-                                CSS, and React.</p>
+                            <h4 class="swiper-marquee-title">Sarvesh</h4>
+                            <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
                         </div>
                     </div>
-                    <!-- Slide 5: Saurabh Kumar (Repeat for loop) -->
+                    <!-- Slide 5: Zaid -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/team-saurabh.png') }}" alt="Saurabh Kumar">
+                        <img src="{{ asset('assets/images/team/Zaid-digicoders-gorakhpur.jpeg') }}" alt="Zaid - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
-                            <h4 class="swiper-marquee-title">Saurabh Kumar</h4>
-                            <div class="swiper-marquee-desc">Lead Architect &amp; MD</div>
-                            <p class="swiper-marquee-bio">Directs strategic growth, cloud infrastructure deployments, and
-                                designs systems.</p>
+                            <h4 class="swiper-marquee-title">Zaid</h4>
+                            <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
                         </div>
                     </div>
-                    <!-- Slide 6: Abhay Pratap Singh (Repeat for loop) -->
+                    <!-- Slide 6: Abhishek Singh (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/team-abhay.png') }}" alt="Abhay Pratap Singh">
+                        <img src="{{ asset('assets/images/team/Abhishek-Singh-digicoders-gorakhpur.jpeg') }}" alt="Abhishek Singh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
-                            <h4 class="swiper-marquee-title">Abhay Pratap Singh</h4>
-                            <div class="swiper-marquee-desc">Director &amp; Chief Academic Relations</div>
-                            <p class="swiper-marquee-bio">Manages academic relationships, placement training systems, and
-                                enterprise hiring.</p>
+                            <h4 class="swiper-marquee-title">Abhishek Singh</h4>
+                            <div class="swiper-marquee-desc">Branch Head &amp; Data Analyst</div>
                         </div>
                     </div>
-                    <!-- Slide 7: Amit Kumar (Repeat for loop) -->
+                    <!-- Slide 7: Muskan (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/team-amit.png') }}" alt="Amit Kumar">
+                        <img src="{{ asset('assets/images/team/Muskan-digicoders-gorakhpur.jpeg') }}" alt="Muskan - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
-                            <h4 class="swiper-marquee-title">Amit Kumar</h4>
-                            <div class="swiper-marquee-desc">Lead Backend Developer</div>
-                            <p class="swiper-marquee-bio">Expert PHP and Laravel engineer. Hands-on mentor for database
-                                operations and API layers.</p>
+                            <h4 class="swiper-marquee-title">Muskan</h4>
+                            <div class="swiper-marquee-desc">Hr Executive</div>
                         </div>
                     </div>
-                    <!-- Slide 8: Abhishek Shukla (Repeat for loop) -->
+                    <!-- Slide 8: Priyanshu Singh (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/team-abhishek.png') }}" alt="Abhishek Shukla">
+                        <img src="{{ asset('assets/images/team/Priyanshu-Singh-digicoders-gorakhpur.jpeg') }}" alt="Priyanshu Singh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
-                            <h4 class="swiper-marquee-title">Abhishek Shukla</h4>
-                            <div class="swiper-marquee-desc">Senior Frontend &amp; UI Lead</div>
-                            <p class="swiper-marquee-bio">Master of responsive web designs. Trainer for Figma prototyping,
-                                CSS, and React.</p>
+                            <h4 class="swiper-marquee-title">Priyanshu Singh</h4>
+                            <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
+                        </div>
+                    </div>
+                    <!-- Slide 9: Sarvesh (Repeat for loop) -->
+                    <div class="swiper-slide swiper-marquee-slide">
+                        <img src="{{ asset('assets/images/team/Sarvesh-digicoders-gorakhpur.jpeg') }}" alt="Sarvesh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <div class="swiper-marquee-overlay">
+                            <h4 class="swiper-marquee-title">Sarvesh</h4>
+                            <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
+                        </div>
+                    </div>
+                    <!-- Slide 10: Zaid (Repeat for loop) -->
+                    <div class="swiper-slide swiper-marquee-slide">
+                        <img src="{{ asset('assets/images/team/Zaid-digicoders-gorakhpur.jpeg') }}" alt="Zaid - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <div class="swiper-marquee-overlay">
+                            <h4 class="swiper-marquee-title">Zaid</h4>
+                            <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
                         </div>
                     </div>
                 </div>
@@ -1217,7 +1216,7 @@
         </div>
     </section>
 
-    
+
     <!-- 11. Gallery -->
     <section class="section-padding" id="gallery">
         <div class="container">
@@ -1342,34 +1341,40 @@
                     </div>
                 </div>
 
-                                <!-- Item 7: New Office Image -->
+               
+
+                <!-- Item 7: Team at Buddha Institute -->
                 <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
                     <div class="glass-card overflow-hidden" style="border-radius: 4px;">
                         <div class="position-relative overflow-hidden"
                             style="height: 180px; background: rgba(0, 0, 0, 0.05);">
-                            <img src="{{ asset('assets/gallery/digicoders-gorakhpur-office.jpg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Gorakhpur Office">
+                            <img src="{{ asset('assets/gallery/digicoders-team-at-buddha-institute-of-technology.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Team at Buddha Institute of Technology">
                         </div>
                         <div class="p-3">
                             <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">CAMPUS</small>
                             <span class="fw-semibold text-sm d-block text-truncate"
-                                title="DigiCoders Gorakhpur Office">DigiCoders Gorakhpur Office</span>
+                                title="DigiCoders Team at Buddha Institute of Technology">Team at Buddha Institute</span>
                         </div>
                     </div>
                 </div>
-<!-- Item 8: Additional Campus Image -->
-<div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
-    <div class="glass-card overflow-hidden" style="border-radius: 4px;">
-        <div class="position-relative overflow-hidden" style="height: 180px; background: rgba(0, 0, 0, 0.05);">
-            <img src="{{ asset('assets/gallery/digicoders-gorakhpur.jpeg') }}" class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Gorakhpur Campus">
-        </div>
-        <div class="p-3">
-            <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">CAMPUS</small>
-            <span class="fw-semibold text-sm d-block text-truncate" title="DigiCoders Gorakhpur Campus">DigiCoders Gorakhpur Campus</span>
-        </div>
-    </div>
-</div>
-{{-- Dynamic code commented out
+
+                <!-- Item 8: Trainers at Buddha Campus -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 4px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 180px; background: rgba(0, 0, 0, 0.05);">
+                            <img src="{{ asset('assets/gallery/digicoders-trainers-buddha-campus-gorakhpur.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Trainers at Buddha Campus Gorakhpur">
+                        </div>
+                        <div class="p-3">
+                            <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">CAMPUS</small>
+                            <span class="fw-semibold text-sm d-block text-truncate"
+                                title="DigiCoders Trainers at Buddha Campus Gorakhpur">Trainers at Buddha Campus</span>
+                        </div>
+                    </div>
+                </div>
+                {{-- Dynamic code commented out
                 @forelse($gallery as $g)
                 <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="{{ $g->category }}" data-aos="zoom-in">
                     <div class="glass-card overflow-hidden" style="border-radius: 4px;">
@@ -1726,7 +1731,8 @@
                                 <div class="code-line"><span class="code-keyword">function</span> <span
                                         class="code-func">enhanceSkills</span>() {</div>
                                 <div class="code-line" style="padding-left: 10px;"><span class="code-keyword">return</span>
-                                    <span class="code-string">"Success 🚀"</span>;</div>
+                                    <span class="code-string">"Success 🚀"</span>;
+                                </div>
                                 <div class="code-line">}</div>
                             </div>
                         </div>
@@ -1739,12 +1745,10 @@
     <!-- 15. Google Map -->
     <section class="section-padding position-relative" style="height: 400px; margin-bottom: -1px;">
         <div class="container h-100 d-flex align-items-center">
-            <!-- <iframe src="{{ $settings['google_map_embed'] ?? '' }}" width="100%" height="400" style="border:0;" -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.803328514588!2d83.2692523!3d26.7392969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399147380139859b%3A0x708768ccb2c065c9!2sBuddha%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1718000000000"
-                width="100%" height="400" style="border:0;"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                title="DigiCoders Technologies Location Map"></iframe>
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="DigiCoders Technologies Location Map"></iframe>
         </div>
     </section>
 
@@ -1761,6 +1765,7 @@
                 autoplay: {
                     delay: 0,
                     disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
                 },
                 allowTouchMove: true,
             });
@@ -1812,14 +1817,14 @@
                         slide.className = 'swiper-slide';
 
                         slide.innerHTML = `
-                                    <div class="placement-slide-card">
-                                        <img src="${item.photo}" 
-                                             alt="${item.alt_text || item.title || 'Placement Success story'}" 
-                                             title="${item.title || 'Placement Success story'}"
-                                             loading="lazy" 
-                                             onerror="this.parentElement.parentElement.style.display='none';">
-                                    </div>
-                                `;
+                                            <div class="placement-slide-card">
+                                                <img src="${item.photo}" 
+                                                     alt="${item.alt_text || item.title || 'Placement Success story'}" 
+                                                     title="${item.title || 'Placement Success story'}"
+                                                     loading="lazy" 
+                                                     onerror="this.parentElement.parentElement.style.display='none';">
+                                            </div>
+                                        `;
                         swiperWrapper.appendChild(slide);
                     });
 
@@ -1916,30 +1921,30 @@
                         const cleanDesc = item.meta_description || item.content.replace(/<\/?[^>]+(>|$)/g, "").substring(0, 130) + '...';
 
                         slide.innerHTML = `
-                                    <div class="blog-premium-card">
-                                        <div class="blog-card-img-wrap">
-                                            <img src="${item.img}" 
-                                                 alt="${cleanTitle}" 
-                                                 loading="lazy"
-                                                 onerror="this.src='https://thedigicoders.com/public/uploads/blog/default.png';">
-                                        </div>
-                                        <div class="blog-card-body">
-                                            <h4 class="blog-card-title" title="${cleanTitle}">
-                                                <a href="https://thedigicoders.com/blog-details/${item.url}" target="_blank" rel="noopener noreferrer">${cleanTitle}</a>
-                                            </h4>
-                                            <p class="blog-card-desc">${cleanDesc}</p>
-                                            <div class="blog-card-footer">
-                                                <span class="text-secondary text-xs">${formatDate(item.date)}</span>
-                                                <a href="https://thedigicoders.com/blog-details/${item.url}" 
-                                                   class="blog-card-btn" 
-                                                   target="_blank" 
-                                                   rel="noopener noreferrer">
-                                                    Read Post <i class="bi bi-arrow-right"></i>
-                                                </a>
+                                            <div class="blog-premium-card">
+                                                <div class="blog-card-img-wrap">
+                                                    <img src="${item.img}" 
+                                                         alt="${cleanTitle}" 
+                                                         loading="lazy"
+                                                         onerror="this.src='https://thedigicoders.com/public/uploads/blog/default.png';">
+                                                </div>
+                                                <div class="blog-card-body">
+                                                    <h4 class="blog-card-title" title="${cleanTitle}">
+                                                        <a href="https://thedigicoders.com/blog-details/${item.url}" target="_blank" rel="noopener noreferrer">${cleanTitle}</a>
+                                                    </h4>
+                                                    <p class="blog-card-desc">${cleanDesc}</p>
+                                                    <div class="blog-card-footer">
+                                                        <span class="text-secondary text-xs">${formatDate(item.date)}</span>
+                                                        <a href="https://thedigicoders.com/blog-details/${item.url}" 
+                                                           class="blog-card-btn" 
+                                                           target="_blank" 
+                                                           rel="noopener noreferrer">
+                                                            Read Post <i class="bi bi-arrow-right"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                `;
+                                        `;
                         blogsSwiperWrapper.appendChild(slide);
                     });
 
@@ -2003,9 +2008,39 @@
             document.querySelectorAll('.index-program-register').forEach(btn => {
                 btn.addEventListener('click', () => {
                     const programName = btn.getAttribute('data-program-name');
-                    window.location.href = "{{ route('contact') }}?course=" + encodeURIComponent(programName);
+                    window.location.href = "https://thedigicoders.com/registration";
                 });
             });
+
+            // Gallery Image Zoom Modal Logic
+            const galleryModalElement = document.getElementById('galleryZoomModal');
+            if(galleryModalElement) {
+                const galleryModal = new bootstrap.Modal(galleryModalElement);
+                const galleryModalImg = document.getElementById('galleryZoomModalImg');
+
+                document.querySelectorAll('.gallery-img').forEach(img => {
+                    img.style.cursor = 'pointer';
+                    img.addEventListener('click', function() {
+                        galleryModalImg.src = this.src;
+                        galleryModalImg.alt = this.alt;
+                        galleryModal.show();
+                    });
+                });
+            }
         });
     </script>
+
+    <!-- Gallery Zoom Modal -->
+    <div class="modal fade" id="galleryZoomModal" tabindex="-1" aria-labelledby="galleryZoomModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0 position-absolute top-0 end-0 z-3">
+                    <button type="button" class="btn-close btn-close-white fs-4 m-2" data-bs-dismiss="modal" aria-label="Close" style="text-shadow: 0 0 10px rgba(0,0,0,0.8); filter: invert(1) grayscale(100%) brightness(200%);"></button>
+                </div>
+                <div class="modal-body p-0 text-center position-relative">
+                    <img src="" id="galleryZoomModalImg" class="img-fluid rounded shadow-lg" alt="Gallery Zoom" style="max-height: 90vh; object-fit: contain; border: 4px solid rgba(255,255,255,0.2);">
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection

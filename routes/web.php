@@ -1,9 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\CourseController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -12,17 +10,19 @@ Route::get('/sitemap.xml', [HomeController::class, 'sitemap'])->name('sitemap');
 Route::get('/robots.txt', [HomeController::class, 'robots'])->name('robots');
 
 // Frontend Pages
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
-Route::get('/about', [HomeController::class, 'about'])->name('about');
-Route::get('/services', [HomeController::class, 'services'])->name('services');
-Route::get('/team', [HomeController::class, 'team'])->name('team');
-Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::view('/', 'index')->name('home');
+Route::redirect('/courses', 'https://thedigicoders.com/courses')->name('courses.index');
+Route::redirect('/about', 'https://thedigicoders.com/about')->name('about');
+Route::redirect('/services', 'https://thedigicoders.com/placement')->name('services');
+Route::redirect('/team', 'https://thedigicoders.com/our-expert')->name('team');
+Route::redirect('/contact', 'https://thedigicoders.com/contact')->name('contact');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 // Blog Module
-Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
-Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
+Route::redirect('/blog', 'https://thedigicoders.com/blog')->name('blog.index');
+Route::get('/blog/{slug}', function ($slug) {
+    return redirect('https://thedigicoders.com/blog-details/'.$slug);
+})->name('blog.show');
 
 // Admin Panel Guest Routes
 Route::middleware('guest')->group(function () {
@@ -91,6 +91,6 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
 });
 
 // Dynamic SEO URL for courses (Must be placed at the bottom to avoid routing collisions)
-Route::get('/{slug}', [CourseController::class, 'show'])
-    ->where('slug', '[a-zA-Z0-9\-]+-training-gorakhpur')
-    ->name('courses.show');
+Route::get('/{slug}', function () {
+    return redirect('https://thedigicoders.com/courses');
+})->where('slug', '[a-zA-Z0-9\-]+-training-gorakhpur')->name('courses.show');
