@@ -48,12 +48,17 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: clip !important;
+    max-width: 100%;
+}
+
 body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: 'Inter', 'Poppins', sans-serif;
     transition: background-color 0.4s ease, color 0.4s ease;
-    overflow-x: hidden;
     position: relative;
 }
 
@@ -2522,6 +2527,8 @@ a.btn-premium-outline,
 
 .comp-logo-img {
     height: 38px;
+    width: auto !important;
+    max-width: 100%;
     object-fit: contain;
 }
 
@@ -3833,6 +3840,7 @@ a.btn-premium-outline,
 
 .footer-logo {
     height: 52px;
+    width: auto !important;
     max-width: 100%;
     object-fit: contain;
     margin-bottom: 20px;
@@ -4606,8 +4614,8 @@ a.footer-contact-value:hover {
     left: 0;
     transform: rotate(-90deg);
     /* Start progress from the top */
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 .progress-ring__circle-bg {
@@ -4670,11 +4678,23 @@ a.footer-contact-value:hover {
         width: 46px;
         height: 46px;
     }
+}
 
-    .progress-ring {
-        transform: rotate(-90deg) scale(0.92);
-        transform-origin: center;
-        width: 46px;
-        height: 46px;
+/* Mobile Responsive Navbar Adjustments */
+@media (max-width: 991.98px) {
+    .nav-logo {
+        height: 42px !important;
+        max-height: 42px !important;
+        width: auto !important;
+        margin-left: 0 !important;
+    }
+    .main-navbar>.container {
+        min-height: 60px !important;
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+    .mobile-toggler {
+        width: 34px !important;
+        height: 34px !important;
     }
 }

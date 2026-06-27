@@ -40,9 +40,8 @@ class WebsiteTest extends TestCase
     {
         $response = $this->get('/courses');
 
-        $response->assertStatus(200);
-        $response->assertSee('Explore Our Professional IT Courses');
-        $response->assertSee('Vocational Training');
+        $response->assertStatus(302);
+        $response->assertRedirect('https://thedigicoders.com/courses');
     }
 
     /**
@@ -54,10 +53,8 @@ class WebsiteTest extends TestCase
 
         $response = $this->get('/'.$course->slug);
 
-        $response->assertStatus(200);
-        $response->assertSee($course->name);
-        $response->assertSee($course->duration);
-        $response->assertSee('Reserve Seat');
+        $response->assertStatus(302);
+        $response->assertRedirect('https://thedigicoders.com/courses');
     }
 
     /**
@@ -67,8 +64,8 @@ class WebsiteTest extends TestCase
     {
         $response = $this->get('/blog');
 
-        $response->assertStatus(200);
-        $response->assertSee('DigiCoders Corporate Blog');
+        $response->assertStatus(302);
+        $response->assertRedirect('https://thedigicoders.com/blog');
     }
 
     /**
@@ -80,9 +77,8 @@ class WebsiteTest extends TestCase
 
         $response = $this->get('/blog/'.$blog->slug);
 
-        $response->assertStatus(200);
-        $response->assertSee($blog->title);
-        $response->assertSee($blog->category);
+        $response->assertStatus(302);
+        $response->assertRedirect('https://thedigicoders.com/blog-details/'.$blog->slug);
     }
 
     /**
@@ -92,8 +88,8 @@ class WebsiteTest extends TestCase
     {
         $response = $this->get('/contact');
 
-        $response->assertStatus(200);
-        $response->assertSee('Contact DigiCoders Technologies');
+        $response->assertStatus(302);
+        $response->assertRedirect('https://thedigicoders.com/contact');
     }
 
     /**
@@ -103,10 +99,8 @@ class WebsiteTest extends TestCase
     {
         $response = $this->get('/about');
 
-        $response->assertStatus(200);
-        $response->assertSee('About');
-        $response->assertSee('Technologies');
-        $response->assertSee('Who We Are');
+        $response->assertStatus(302);
+        $response->assertRedirect('https://thedigicoders.com/about');
     }
 
     /**
@@ -116,10 +110,8 @@ class WebsiteTest extends TestCase
     {
         $response = $this->get('/services');
 
-        $response->assertStatus(200);
-        $response->assertSee('Our Corporate');
-        $response->assertSee('Services');
-        $response->assertSee('Enterprise Deliveries');
+        $response->assertStatus(302);
+        $response->assertRedirect('https://thedigicoders.com/placement');
     }
 
     /**
@@ -129,10 +121,8 @@ class WebsiteTest extends TestCase
     {
         $response = $this->get('/team');
 
-        $response->assertStatus(200);
-        $response->assertSee('Meet Our');
-        $response->assertSee('Team');
-        $response->assertSee('The Builders');
+        $response->assertStatus(302);
+        $response->assertRedirect('https://thedigicoders.com/our-expert');
     }
 
     /**

@@ -292,6 +292,7 @@
                         builders rather than passive coders.
                     </p>
 
+                    {{--
                     <!-- Premium Stats Mini Grid -->
                     <div class="row g-3 mb-4 mt-2">
                         <div class="col-6 col-md-3">
@@ -319,6 +320,7 @@
                             </div>
                         </div>
                     </div>
+                    --}}
 
                     <div class="row g-4 mt-2">
                         <div class="col-md-6 d-flex gap-3">

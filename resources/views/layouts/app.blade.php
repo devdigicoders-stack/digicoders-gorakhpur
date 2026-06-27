@@ -98,7 +98,7 @@ software company GIDA Gorakhpur,
     <meta property="og:description"
         content="Join No.1 IT Training Institute in Gorakhpur for Summer Training, Internship, Industrial Training and Live Projects in Python, Java, PHP, Laravel, MERN Stack, Android, AI and Data Science with Placement Assistance.">
 
-    <meta property="og:image" content="{{ asset('assets/images/seo/home-og.webp') }}">
+    <meta property="og:image" content="{{ asset('assets/images/logo-square.png') }}">
 
     <meta property="og:url" content="{{ request()->url() }}">
 
@@ -113,7 +113,7 @@ software company GIDA Gorakhpur,
     <meta name="twitter:description"
         content="Professional Summer Training, Internship, Industrial Training, Apprenticeship and Software Development Services in Gorakhpur with Live Projects & Placement Support.">
 
-    <meta name="twitter:image" content="{{ asset('assets/images/seo/home-og.webp') }}">
+    <meta name="twitter:image" content="{{ asset('assets/images/logo-square.png') }}">
 
     <!-- Extra SEO -->
 
@@ -653,7 +653,7 @@ software company GIDA Gorakhpur,
 
     <!-- Premium Back to Top Button with Progress Ring -->
     <button id="backToTop" class="back-to-top-btn" aria-label="Back to Top">
-        <svg class="progress-ring" width="50" height="50">
+        <svg class="progress-ring" width="50" height="50" viewBox="0 0 50 50">
             <circle class="progress-ring__circle-bg" stroke="rgba(255, 255, 255, 0.08)" stroke-width="3"
                 fill="transparent" r="22" cx="25" cy="25" />
             <circle id="progressRingCircle" class="progress-ring__circle" stroke="var(--secondary, #e76028)"
@@ -731,5 +731,6 @@ software company GIDA Gorakhpur,
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
+
 
 </html>
