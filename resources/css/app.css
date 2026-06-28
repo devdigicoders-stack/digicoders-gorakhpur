@@ -1044,6 +1044,38 @@ a.btn-premium-outline,
     padding-left: 8px;
 }
 
+/* ---- Mobile Nav Dropdown ---- */
+.mobile-nav-dropdown-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+.mobile-chevron {
+    font-size: 0.8rem;
+    transition: transform 0.25s ease;
+}
+
+.mobile-nav-dropdown-toggle[aria-expanded="true"] .mobile-chevron {
+    transform: rotate(180deg);
+}
+
+.mobile-nav-submenu {
+    background: rgba(0, 0, 0, 0.02);
+    border-left: 2px solid var(--secondary);
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+[data-theme="dark"] .mobile-nav-submenu {
+    background: rgba(255, 255, 255, 0.02);
+}
+
 /* =============================================
    HERO SECTION
    ============================================= */
@@ -4108,12 +4140,33 @@ a.footer-contact-value:hover {
         text-align: center;
     }
 
+    .footer-logo {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
     .footer-social-row {
         justify-content: center;
     }
 
+    .footer-heading {
+        text-align: center;
+    }
+
     .footer-heading::after {
-        left: 0;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .footer-contact-list {
+        align-items: center;
+    }
+
+    .footer-contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 

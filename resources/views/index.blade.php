@@ -282,16 +282,11 @@
                     <h2 class="h1 fw-bold mb-4" style="font-family: 'Montserrat', sans-serif;">DigiCoders Technologies Pvt.
                         Ltd.</h2>
                     <p class="mb-4 text-secondary">
-                        Based in Gorakhpur, DigiCoders Technologies is a premium IT Training Institute and software
-                        development company. We bridge the gap between academic education and industry standards by offering
-                        dynamic, project-oriented courses taught by real development professionals.
+                        Based in Gorakhpur, DigiCoders Technologies is a premier IT training institute and software development company. We bridge the gap between academic education and industry standards by offering specialized <strong>Summer Training</strong>, <strong>Winter Training</strong>, <strong>Industrial Training</strong>, <strong>Apprenticeship</strong>, and <strong>Internship Training</strong> programs. Our courses are specifically designed to empower students of <strong>B.Tech CS/IT</strong>, <strong>BCA</strong>, <strong>MCA</strong>, <strong>Diploma CS/IT</strong>, <strong>PGDCA</strong>, <strong>Electronics</strong>, and <strong>Mechanical (AutoCAD)</strong>.
                     </p>
                     <p class="mb-4 text-secondary">
-                        Our curriculum focuses on hands-on practical implementation, version control via GitHub, testing
-                        paradigms, and modern cloud deployment architectures. We prepare candidates to think like senior
-                        builders rather than passive coders.
+                        Our curriculum focus spans hands-on practical coding, live project training, advanced <strong>AutoCAD</strong> designing for mechanical students, core embedded systems for electronics, and modern software architectures for IT branches. Guided by real development professionals, we prepare candidates to think like industry builders, ensuring they secure high-demand placements in top tech companies.
                     </p>
-
                     {{--
                     <!-- Premium Stats Mini Grid -->
                     <div class="row g-3 mb-4 mt-2">
@@ -321,7 +316,6 @@
                         </div>
                     </div>
                     --}}
-
                     <div class="row g-4 mt-2">
                         <div class="col-md-6 d-flex gap-3">
                             <div class="text-brand-blue mt-1">
@@ -356,8 +350,64 @@
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="about-image-wrapper">
                         <div class="about-img-container">
-                            <img src="{{ asset('assets/images/digicoders-gorakhpur-office-front-view.jpeg') }}"
+                            <img src="{{ asset('assets/images/hero-office.jpg') }}"
                                 class="about-img" alt="DigiCoders IT Training Classroom">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branch Manager Profile Section -->
+    <section class="section-padding" id="branch-manager-profile" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Image Column -->
+                <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-right">
+                    <div class="position-relative hero-media-wrapper p-0">
+                        <div class="glass-card overflow-hidden shadow-lg border border-light" style="border-radius: 12px !important;">
+                            <img src="{{ asset('assets/images/team/Abhishek-singh-branch-manager-gorakhpur-digicoders.jpg') }}" 
+                                 alt="Abhishek Singh - Branch Manager & Data Analyst Expert at DigiCoders Gorakhpur" 
+                                 class="img-fluid w-100 object-fit-cover" 
+                                 style="aspect-ratio: 5/4; filter: brightness(0.95); transition: transform 0.5s ease;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="col-lg-7 order-1 order-lg-2" data-aos="fade-left">
+                    <span class="badge bg-secondary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold mb-3">Leadership Profile</span>
+                    <h2 class="h1 fw-bold mb-3" style="font-family: 'Montserrat', sans-serif;">Abhishek Singh</h2>
+                    <h4 class="fw-semibold mb-4" style="color: var(--secondary);">Branch Manager &amp; Data Analyst Expert</h4>
+                    
+                    <p class="text-secondary mb-4 leading-relaxed">
+                       Abhishek Singh leads the Gorakhpur branch of DigiCoders Technologies as a <strong>Branch Manager</strong> and <strong>Data Analyst Expert</strong>. He specializes in data analytics, business intelligence, and practical technical training.
+                    </p>
+
+                    <p class="text-secondary mb-4 leading-relaxed">
+                        He has trained hundreds of B.Tech, BCA, MCA, and Diploma CS/IT students, helping them build industry-ready skills and solve real-world data challenges.
+                    </p>
+
+                    <!-- Mini Profile Stats Grid -->
+                    <div class="row g-3 mt-4">
+                        <div class="col-6 col-md-4">
+                            <div class="border-start border-3 ps-3" style="border-color: var(--secondary) !important;">
+                                <h4 class="fw-bold mb-0" style="color: var(--secondary);">5+</h4>
+                                <small class="text-secondary text-xs">Years of Leadership</small>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="border-start border-3 ps-3" style="border-color: var(--secondary) !important;">
+                                <h4 class="fw-bold mb-0" style="color: var(--secondary);">1,500+</h4>
+                                <small class="text-secondary text-xs">Students Mentored</small>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="border-start border-3 ps-3" style="border-color: var(--secondary) !important;">
+                                <h4 class="fw-bold mb-0" style="color: var(--secondary);">Data Analytics</h4>
+                                <small class="text-secondary text-xs">Core Specialization</small>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1418,21 +1468,21 @@
                 $staticFaqs = [
                     ['q' => 'What is DigiCoders Technologies Pvt. Ltd.?', 'a' => 'DigiCoders Technologies Pvt. Ltd. is a professional IT Training and Internship company in Gorakhpur that provides practical training programs for Diploma (CS/IT), B.Tech (Computer Science/IT), BCA, MCA, and other technical students. We focus on live projects, industry-oriented learning, internship certification, and placement assistance.'],
                     ['q' => 'Which students can join DigiCoders training programs?', 'a' => 'Students pursuing Diploma in Computer Science or Information Technology, B.Tech (CS/IT), BCA, MCA, B.Sc IT, and fresh graduates can join our training programs. Beginners as well as students with basic programming knowledge are welcome.'],
-                    ['q' => 'What types of training programs do you offer?', 'a' => 'We provide Summer Training, Winter Training, Industrial Training, Apprenticeship Training, Internship Programs, Full Stack Development Training, Web Development Training, Python Training, Java Training, PHP Laravel Training, Data Science, AI, and Digital Marketing courses.'],
-                    ['q' => 'What is Summer Training?', 'a' => 'Summer Training is a practical learning program conducted during summer vacations. Students work on live projects, improve technical skills, and gain industry experience that helps them prepare for placements and future careers.'],
-                    ['q' => 'What is Winter Training?', 'a' => 'Winter Training is designed for students who want to utilize their winter break to enhance programming, development, and software engineering skills through practical sessions and real-world projects.'],
-                    ['q' => 'What is Industrial Training?', 'a' => 'Industrial Training provides students with real software development experience by working on live industry projects under experienced mentors. It helps bridge the gap between academic knowledge and professional requirements.'],
-                    ['q' => 'What is Apprenticeship Training?', 'a' => 'Apprenticeship Training is an advanced practical program where students gain hands-on experience by working on real client-based projects while learning industry standards, teamwork, and software development practices.'],
+                    ['q' => 'What types of training programs do you offer?', 'a' => 'We provide Summer Training, Winter Training, Industrial Training, Apprenticeship Training, Internship Programs, Full Stack Development Training, Web Development Training, Python Training, Java Training, PHP Laravel Training, Data Science, AI, and Digital Marketing courses in Gorakhpur.'],
+                    ['q' => 'What is Summer Training?', 'a' => 'Summer Training is a practical learning program conducted during summer vacations in Gorakhpur. Students work on live projects, improve technical skills, and gain industry experience that helps them prepare for placements and future careers.'],
+                    ['q' => 'What is Winter Training?', 'a' => 'Winter Training in Gorakhpur is designed for students who want to utilize their winter break to enhance programming, development, and software engineering skills through practical sessions and real-world projects.'],
+                    ['q' => 'What is Industrial Training?', 'a' => 'Industrial Training in Gorakhpur provides students with real software development experience by working on live industry projects under experienced mentors. It helps bridge the gap between academic knowledge and professional requirements.'],
+                    ['q' => 'What is Apprenticeship Training?', 'a' => 'Apprenticeship Training is an advanced practical program in Gorakhpur where students gain hands-on experience by working on real client-based projects while learning industry standards, teamwork, and software development practices.'],
                     ['q' => 'Do you provide Internship Certificates?', 'a' => 'Yes. After successfully completing the training or internship program and fulfilling the project requirements, students receive an Internship/Training Completion Certificate from DigiCoders Technologies Pvt. Ltd.'],
                     ['q' => 'Which programming languages and technologies are taught?', 'a' => 'We provide training in PHP, Laravel, Java, Python, C, C++, HTML, CSS, JavaScript, Bootstrap, React, MySQL, Android Development, Full Stack Development, Data Science, AI, and Digital Marketing.'],
                     ['q' => 'Are live projects included in the training?', 'a' => 'Yes. Students work on live projects such as E-Commerce Websites, College Management Systems, Hospital Management Systems, Attendance Systems, Portfolio Websites, and other real-world applications.'],
                     ['q' => 'Is the training suitable for beginners?', 'a' => 'Yes. Our programs start from basic concepts and gradually move to advanced topics, making them suitable for beginners as well as students who want to improve their existing skills.'],
-                    ['q' => 'Do you provide placement assistance?', 'a' => 'Yes. DigiCoders provides placement assistance including resume preparation, technical interview guidance, aptitude preparation, mock interviews, and career counseling to help students start their IT careers.'],
+                    ['q' => 'Do you provide placement assistance?', 'a' => 'Yes. DigiCoders in Gorakhpur provides placement assistance including resume preparation, technical interview guidance, aptitude preparation, mock interviews, and career counseling to help students start their IT careers.'],
                     ['q' => 'Why should students choose DigiCoders Technologies Pvt. Ltd.?', 'a' => 'Students choose DigiCoders because of practical training, experienced trainers, live projects, updated industry curriculum, internship certification, career guidance, and a supportive learning environment focused on real skill development.'],
-                    ['q' => 'What is the duration of the training programs?', 'a' => 'Training duration depends on the selected program. Students can choose options such as 30 Days, 45 Days, 60 Days, 3 Months, or 6 Months according to their academic requirements and career goals.'],
-                    ['q' => 'Do you provide project guidance for college students?', 'a' => 'Yes. We help Diploma, B.Tech, BCA, and MCA students build academic and major projects using modern technologies while explaining the complete development process and documentation.'],
+                    ['q' => 'What is the duration of the training programs?', 'a' => 'Training duration depends on the selected program in Gorakhpur. Students can choose options such as 30 Days, 45 Days, 60 Days, 3 Months, or 6 Months according to their academic requirements and career goals.'],
+                    ['q' => 'Do you provide project guidance for college students?', 'a' => 'Yes. We help Diploma, B.Tech, BCA, and MCA students in Gorakhpur build academic and major projects using modern technologies while explaining the complete development process and documentation.'],
                     ['q' => 'Will students receive practical coding experience?', 'a' => 'Absolutely. Every student writes code, builds projects, debugs applications, works with databases, and develops complete software solutions to gain confidence in real development environments.'],
-                    ['q' => 'Can final-year students join internship programs?', 'a' => 'Yes. Final-year Diploma, B.Tech, BCA, and MCA students can join our internship programs to improve technical skills, build professional projects, and prepare for campus placements and job opportunities.'],
+                    ['q' => 'Can final-year students join internship programs?', 'a' => 'Yes. Final-year Diploma, B.Tech, BCA, and MCA students can join our internship programs in Gorakhpur to improve technical skills, build professional projects, and prepare for campus placements and job opportunities.'],
                     ['q' => 'What career opportunities are available after completing the training?', 'a' => 'After completing the training, students can apply for roles such as Web Developer, PHP Developer, Laravel Developer, Java Developer, Python Developer, Full Stack Developer, Software Engineer, Android Developer, Data Analyst, and Digital Marketing Executive.'],
                     ['q' => 'How can students enroll in DigiCoders training programs?', 'a' => 'Students can enroll by filling out the online registration form, contacting our admission team, visiting our training center, or connecting through phone, email, or WhatsApp for complete course information and admission guidance.'],
                     ['q' => 'Does DigiCoders provide both online and offline training?', 'a' => 'Yes. DigiCoders Technologies Pvt. Ltd. offers both classroom and online training programs, allowing students from Gorakhpur and other cities to learn from experienced trainers with access to practical sessions, live projects, and mentorship.'],

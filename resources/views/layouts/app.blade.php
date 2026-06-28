@@ -224,8 +224,8 @@ software company GIDA Gorakhpur,
                 "Friday",
                 "Saturday"
             ],
-            "opens": "10:00",
-            "closes": "19:00"
+            "opens": "08:00",
+            "closes": "17:00"
         }
     }
     </script>
@@ -455,9 +455,8 @@ software company GIDA Gorakhpur,
 
             <!-- Right Actions -->
             <div class="d-none d-lg-flex align-items-center gap-2">
-                <a href="https://thedigicoders.com/registration" target="_blank" rel="noopener noreferrer"
-                    class="nav-btn nav-btn-orange" style="text-decoration:none;">Register
-                    Now</a>
+                <a href="https://thedigicoders.com/verify-certificate" target="_blank" rel="noopener noreferrer"
+                    class="nav-btn nav-btn-orange" style="text-decoration:none;">Verify Certificate</a>
                 <a href="https://thedigicoders.com/public/assets/images/DigiCoders_2026_Training_Brochure.pdf"
                     target="_blank" rel="noopener noreferrer" class="nav-btn nav-btn-blue"
                     style="text-decoration:none;">Download
@@ -477,23 +476,43 @@ software company GIDA Gorakhpur,
             <div class="container mobile-nav-body">
                 <a class="mobile-nav-link {{ request()->routeIs('home') ? 'is-active' : '' }}"
                     href="{{ route('home') }}">Home</a>
-              
-                <a class="mobile-nav-link" href="https://thedigicoders.com/about" target="_blank"
-                    rel="noopener noreferrer">About Us</a>
-                <a class="mobile-nav-link" href="https://thedigicoders.com/our-expert" target="_blank"
-                    rel="noopener noreferrer">Our Expert</a>
-                <a class="mobile-nav-link" href="https://thedigicoders.com/gallery" target="_blank"
-                    rel="noopener noreferrer">Gallery</a>
-                <a class="mobile-nav-link" href="https://thedigicoders.com/registration" target="_blank"
-                    rel="noopener noreferrer">Registration</a>
-                <a class="mobile-nav-link" href="https://thedigicoders.com/placement" target="_blank"
-                    rel="noopener noreferrer">Placements</a>
-                <a class="mobile-nav-link" href="https://thedigicoders.com/contact" target="_blank"
-                    rel="noopener noreferrer">Contact</a>
+
+                <!-- Courses Dropdown for Mobile -->
+                <div class="mobile-nav-dropdown">
+                    <button class="mobile-nav-link mobile-nav-dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mobileCoursesCollapse" aria-expanded="false" aria-controls="mobileCoursesCollapse">
+                        Courses <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </button>
+                    <div class="collapse mobile-nav-submenu" id="mobileCoursesCollapse">
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/home/vocationaltraining" target="_blank" rel="noopener noreferrer">Vocational Training</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/home/summertraining" target="_blank" rel="noopener noreferrer">Summer Training</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/home/wintertraining" target="_blank" rel="noopener noreferrer">Winter Training</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/home/industrialtraining" target="_blank" rel="noopener noreferrer">Industrial Training</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/home/apprenticeshiptraining" target="_blank" rel="noopener noreferrer">Apprenticeship Training</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/home/internshiptraining" target="_blank" rel="noopener noreferrer">Internship Training</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/home/projecttraining" target="_blank" rel="noopener noreferrer">Project Training</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/home/syllabustraining" target="_blank" rel="noopener noreferrer">Syllabus Training</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/home/facultytraining" target="_blank" rel="noopener noreferrer">Faculty Training</a>
+                    </div>
+                </div>
+
+                <!-- Company Dropdown for Mobile -->
+                <div class="mobile-nav-dropdown">
+                    <button class="mobile-nav-link mobile-nav-dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mobileCompanyCollapse" aria-expanded="false" aria-controls="mobileCompanyCollapse">
+                        Company <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </button>
+                    <div class="collapse mobile-nav-submenu" id="mobileCompanyCollapse">
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/about" target="_blank" rel="noopener noreferrer">About Us</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/our-expert" target="_blank" rel="noopener noreferrer">Our Expert</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/gallery" target="_blank" rel="noopener noreferrer">Gallery</a>
+                    </div>
+                </div>
+
+                <a class="mobile-nav-link {{ request()->routeIs('team') ? 'is-active' : '' }}" href="https://thedigicoders.com/registration" target="_blank" rel="noopener noreferrer">Registration</a>
+                <a class="mobile-nav-link {{ request()->routeIs('services') ? 'is-active' : '' }}" href="https://thedigicoders.com/placement" target="_blank" rel="noopener noreferrer">Placements</a>
+                <a class="mobile-nav-link {{ request()->routeIs('contact') ? 'is-active' : '' }}" href="https://thedigicoders.com/contact" target="_blank" rel="noopener noreferrer">Contact</a>
                 <div class="d-flex gap-2 mt-3 pb-3">
-                    <a href="https://thedigicoders.com/registration" target="_blank" rel="noopener noreferrer"
-                        class="nav-btn nav-btn-orange flex-fill text-center" style="text-decoration:none;">Register
-                        Now</a>
+                    <a href="https://thedigicoders.com/verify-certificate" target="_blank" rel="noopener noreferrer"
+                        class="nav-btn nav-btn-orange flex-fill text-center" style="text-decoration:none;">Verify Certificate</a>
                     <a href="https://thedigicoders.com/public/assets/images/DigiCoders_2026_Training_Brochure.pdf"
                         target="_blank" rel="noopener noreferrer" class="nav-btn nav-btn-blue flex-fill text-center"
                         style="text-decoration:none;">Download Syllabus</a>
@@ -543,6 +562,7 @@ software company GIDA Gorakhpur,
                                     class="footer-social-icon">
                                     <i class="bi bi-whatsapp"></i>
                                 </a>
+                                
                             </div>
                         </div>
                     </div>
@@ -615,7 +635,7 @@ software company GIDA Gorakhpur,
                                 </div>
                                 <div>
                                     <span class="footer-contact-label">Working Hours</span>
-                                    <span class="footer-contact-value">Mon – Sat: 10:00 AM – 7:00 PM</span>
+                                    <span class="footer-contact-value">Mon – Sat: 8:00 AM – 5:00 PM</span>
                                 </div>
                             </div>
                         </div>
