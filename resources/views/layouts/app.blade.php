@@ -390,6 +390,9 @@
                             rel="noopener noreferrer">
                             <span class="nav-dropdown-item-title">Gallery</span>
                         </a>
+                        <a class="nav-dropdown-item" href="{{ route('blog.index') }}">
+                            <span class="nav-dropdown-item-title">Blogs</span>
+                        </a>
                     </div>
                 </div>
 
@@ -455,6 +458,7 @@
                         <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/about" target="_blank" rel="noopener noreferrer">About Us</a>
                         <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/our-expert" target="_blank" rel="noopener noreferrer">Our Expert</a>
                         <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/gallery" target="_blank" rel="noopener noreferrer">Gallery</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="{{ route('blog.index') }}">Blogs & Articles</a>
                     </div>
                 </div>
 
