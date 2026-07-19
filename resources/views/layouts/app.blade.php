@@ -15,67 +15,16 @@
     <!-- Gorakhpur Best SEO Optimized Meta Tags -->
 
     <title>
-        Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders
-        Technologies Pvt. Ltd.
+        {{ isset($seo) && !empty($seo->meta_title) ? $seo->meta_title : 'Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders Technologies Pvt. Ltd.' }}
     </title>
 
     <meta name="title"
-        content="Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders Technologies Pvt. Ltd.">
+        content="{{ isset($seo) && !empty($seo->meta_title) ? $seo->meta_title : 'Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders Technologies Pvt. Ltd.' }}">
 
     <meta name="description"
-        content="DigiCoders Technologies Pvt. Ltd. is the No.1 IT Training Institute & Software Development Company in Gorakhpur offering Summer Training, Winter Training, Industrial Training, Internship, Apprenticeship, Live Projects and Professional Courses in Python, Java, PHP, Laravel, MERN Stack, React JS, Android, Data Science, AI, Machine Learning, Web Development, Digital Marketing and Full Stack Development with Certificate, Placement Assistance and Real-Time Projects.">
+        content="{{ isset($seo) && !empty($seo->meta_description) ? $seo->meta_description : 'DigiCoders Technologies Pvt. Ltd. is the No.1 IT Training Institute & Software Development Company in Gorakhpur offering Summer Training, Winter Training, Industrial Training, Internship, Apprenticeship, Live Projects and Professional Courses in Python, Java, PHP, Laravel, MERN Stack, React JS, Android, Data Science, AI, Machine Learning, Web Development, Digital Marketing and Full Stack Development with Certificate, Placement Assistance and Real-Time Projects.' }}">
 
-    <meta name="keywords" content="
-best summer training in gorakhpur,
-best industrial training in gorakhpur,
-best internship in gorakhpur,
-best software development company in gorakhpur,
-best IT company in gorakhpur,
-best computer institute in gorakhpur,
-best coding institute in gorakhpur,
-best programming institute in gorakhpur,
-python training in gorakhpur,
-python internship gorakhpur,
-java training in gorakhpur,
-java internship gorakhpur,
-php training in gorakhpur,
-php laravel training gorakhpur,
-laravel internship gorakhpur,
-mern stack training gorakhpur,
-full stack development course gorakhpur,
-react js training gorakhpur,
-node js training gorakhpur,
-android training gorakhpur,
-web development course gorakhpur,
-web designing course gorakhpur,
-digital marketing training gorakhpur,
-data science training gorakhpur,
-machine learning course gorakhpur,
-artificial intelligence training gorakhpur,
-software internship gorakhpur,
-industrial internship gorakhpur,
-apprenticeship training gorakhpur,
-summer internship for btech students,
-summer training for bca students,
-summer training for mca students,
-summer training for diploma cs students,
-industrial training for cs students,
-live project training gorakhpur,
-6 weeks summer training,
-6 months industrial training,
-best internship company near gida gorakhpur,
-best training institute near gida,
-internship with certificate gorakhpur,
-placement training gorakhpur,
-software company internship gorakhpur,
-best IT internship in UP,
-best coding classes in gorakhpur,
-DigiCoders Technologies,
-DigiCoders Technologies Pvt Ltd,
-DigiCoders Gorakhpur,
-IT Training Institute GIDA Gorakhpur,
-software company GIDA Gorakhpur,
-">
+    <meta name="keywords" content="{{ isset($seo) && !empty($seo->meta_keywords) ? $seo->meta_keywords : 'best summer training in gorakhpur, best industrial training in gorakhpur, best internship in gorakhpur, best software development company in gorakhpur, best IT company in gorakhpur, best computer institute in gorakhpur, best coding institute in gorakhpur, best programming institute in gorakhpur, python training in gorakhpur, python internship gorakhpur, java training in gorakhpur, java internship gorakhpur, php training in gorakhpur, php laravel training gorakhpur, laravel internship gorakhpur, mern stack training gorakhpur, full stack development course gorakhpur, react js training gorakhpur, node js training gorakhpur, android training gorakhpur, web development course gorakhpur, web designing course gorakhpur, digital marketing training gorakhpur, data science training gorakhpur, machine learning course gorakhpur, artificial intelligence training gorakhpur, software internship gorakhpur, industrial internship gorakhpur, apprenticeship training gorakhpur, summer internship for btech students, summer training for bca students, summer training for mca students, summer training for diploma cs students, industrial training for cs students, live project training gorakhpur, 6 weeks summer training, 6 months industrial training, best internship company near gida gorakhpur, best training institute near gida, internship with certificate gorakhpur, placement training gorakhpur, software company internship gorakhpur, best IT internship in UP, best coding classes in gorakhpur, DigiCoders Technologies, DigiCoders Technologies Pvt Ltd, DigiCoders Gorakhpur, IT Training Institute GIDA Gorakhpur, software company GIDA Gorakhpur' }}">
 
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 
@@ -93,12 +42,12 @@ software company GIDA Gorakhpur,
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="DigiCoders Technologies">
     <meta property="og:title"
-        content="Best Summer Training & Internship Institute in Gorakhpur | DigiCoders Technologies">
+        content="{{ isset($seo) && !empty($seo->meta_title) ? $seo->meta_title : 'Best Summer Training & Internship Institute in Gorakhpur | DigiCoders Technologies' }}">
 
     <meta property="og:description"
-        content="Join No.1 IT Training Institute in Gorakhpur for Summer Training, Internship, Industrial Training and Live Projects in Python, Java, PHP, Laravel, MERN Stack, Android, AI and Data Science with Placement Assistance.">
+        content="{{ isset($seo) && !empty($seo->meta_description) ? $seo->meta_description : 'Join No.1 IT Training Institute in Gorakhpur for Summer Training, Internship, Industrial Training and Live Projects in Python, Java, PHP, Laravel, MERN Stack, Android, AI and Data Science with Placement Assistance.' }}">
 
-    <meta property="og:image" content="{{ asset('assets/images/logo-square.png') }}">
+    <meta property="og:image" content="{{ isset($seo) && !empty($seo->og_image) ? (str_starts_with($seo->og_image, 'http') ? $seo->og_image : asset($seo->og_image)) : asset('assets/images/logo-square.png') }}">
 
     <meta property="og:url" content="{{ request()->url() }}">
 
@@ -108,12 +57,12 @@ software company GIDA Gorakhpur,
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="twitter:title" content="Best Summer Training & Internship in Gorakhpur | DigiCoders Technologies">
+    <meta name="twitter:title" content="{{ isset($seo) && !empty($seo->meta_title) ? $seo->meta_title : 'Best Summer Training & Internship in Gorakhpur | DigiCoders Technologies' }}">
 
     <meta name="twitter:description"
-        content="Professional Summer Training, Internship, Industrial Training, Apprenticeship and Software Development Services in Gorakhpur with Live Projects & Placement Support.">
+        content="{{ isset($seo) && !empty($seo->meta_description) ? $seo->meta_description : 'Professional Summer Training, Internship, Industrial Training, Apprenticeship and Software Development Services in Gorakhpur with Live Projects & Placement Support.' }}">
 
-    <meta name="twitter:image" content="{{ asset('assets/images/logo-square.png') }}">
+    <meta name="twitter:image" content="{{ isset($seo) && !empty($seo->og_image) ? (str_starts_with($seo->og_image, 'http') ? $seo->og_image : asset($seo->og_image)) : asset('assets/images/logo-square.png') }}">
 
     <!-- Extra SEO -->
 
@@ -449,6 +398,8 @@ software company GIDA Gorakhpur,
                     rel="noopener noreferrer">Registration</a>
                 <a class="main-nav-link {{ request()->routeIs('services') ? 'is-active' : '' }}"
                     href="https://thedigicoders.com/placement" target="_blank" rel="noopener noreferrer">Placements</a>
+                <a class="main-nav-link {{ request()->routeIs('blog.*') ? 'is-active' : '' }}"
+                    href="{{ route('blog.index') }}">Blog</a>
                 <a class="main-nav-link {{ request()->routeIs('contact') ? 'is-active' : '' }}"
                     href="https://thedigicoders.com/contact" target="_blank" rel="noopener noreferrer">Contact</a>
             </div>
@@ -509,6 +460,7 @@ software company GIDA Gorakhpur,
 
                 <a class="mobile-nav-link {{ request()->routeIs('team') ? 'is-active' : '' }}" href="https://thedigicoders.com/registration" target="_blank" rel="noopener noreferrer">Registration</a>
                 <a class="mobile-nav-link {{ request()->routeIs('services') ? 'is-active' : '' }}" href="https://thedigicoders.com/placement" target="_blank" rel="noopener noreferrer">Placements</a>
+                <a class="mobile-nav-link {{ request()->routeIs('blog.*') ? 'is-active' : '' }}" href="{{ route('blog.index') }}">Blog</a>
                 <a class="mobile-nav-link {{ request()->routeIs('contact') ? 'is-active' : '' }}" href="https://thedigicoders.com/contact" target="_blank" rel="noopener noreferrer">Contact</a>
                 <div class="d-flex gap-2 mt-3 pb-3">
                     <a href="https://thedigicoders.com/verify-certificate" target="_blank" rel="noopener noreferrer"
@@ -538,31 +490,12 @@ software company GIDA Gorakhpur,
                         <div class="footer-brand-col">
                             <img src="{{ asset('assets/images/logo-white.png') }}" alt="DigiCoders Technologies Logo"
                                 class="footer-logo" loading="lazy">
-                            <p class="footer-brand-desc">Transforming raw talent into industry-ready software engineers.
-                                We provide
-                                practical-based training in coding, systems architecture, and generative AI models.</p>
-                            <div class="footer-social-row">
-                                <a href="https://www.facebook.com/DigiCodersTech/" target="_blank" aria-label="Facebook"
-                                    class="footer-social-icon">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="https://www.instagram.com/digacoderstech" target="_blank" aria-label="Instagram"
-                                    class="footer-social-icon">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/company/digicoders/" target="_blank" aria-label="LinkedIn"
-                                    class="footer-social-icon">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                                <a href="https://www.youtube.com/@digicoders" target="_blank" aria-label="YouTube"
-                                    class="footer-social-icon">
-                                    <i class="bi bi-youtube"></i>
-                                </a>
-                                <a href="https://www.whatsapp.com/channel/0029VaDTIxW5EjxzOyubYT3l" target="_blank" aria-label="WhatsApp"
-                                    class="footer-social-icon">
-                                    <i class="bi bi-whatsapp"></i>
-                                </a>
-                                
+                            <p class="footer-brand-desc">Join the best Summer Training in Gorakhpur and gain practical experience in coding, web development, systems architecture, and generative AI through live projects and industry-focused learning.</p>
+                            
+                            <!-- Location Information -->
+                            <div class="d-flex align-items-start gap-2 mt-4 text-secondary" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7) !important; line-height: 1.5;">
+                                <i class="bi bi-geo-alt-fill text-primary" style="margin-top: 3px; font-size: 1rem;"></i>
+                                <span>Inside Main Building, Buddha Institute of Technology, CL-1, Sector-7, GIDA, Gorakhpur, UP - 273209</span>
                             </div>
                         </div>
                     </div>
@@ -592,8 +525,7 @@ software company GIDA Gorakhpur,
                         <ul class="footer-link-list">
                             <li><a href="https://student.thedigicoders.com/" target="_blank"
                                     rel="noopener noreferrer">Student Portal</a></li>
-                            <li><a href="https://thedigicoders.com/blog" target="_blank" rel="noopener noreferrer">Blog
-                                    Articles</a></li>
+                            <li><a href="{{ route('blog.index') }}">Blog Articles</a></li>
                             <li><a href="https://thedigicoders.com/placement" target="_blank"
                                     rel="noopener noreferrer">Placements</a></li>
                             <li><a href="https://thedigicoders.com/verify-certificate" target="_blank"
@@ -608,7 +540,7 @@ software company GIDA Gorakhpur,
                     <!-- Get In Touch -->
                     <div class="col-lg-4 col-md-6">
                         <h6 class="footer-heading">Get In Touch</h6>
-                        <div class="footer-contact-list">
+                        <div class="footer-contact-list mb-4">
                             <div class="footer-contact-item">
                                 <div class="footer-contact-icon">
                                     <i class="bi bi-telephone-fill"></i>
@@ -617,6 +549,7 @@ software company GIDA Gorakhpur,
                                     <span class="footer-contact-label">Call Us</span>
                                     <a href="tel:9801017529"
                                         class="footer-contact-value">9801017529</a>
+                                        
                                 </div>
                             </div>
                             <div class="footer-contact-item">
@@ -639,6 +572,30 @@ software company GIDA Gorakhpur,
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Relocated Social Icons -->
+                        <div class="footer-social-row">
+                            <a href="https://www.facebook.com/DigiCodersTech/" target="_blank" aria-label="Facebook"
+                                class="footer-social-icon">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/digacoderstech" target="_blank" aria-label="Instagram"
+                                class="footer-social-icon">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/digicoders/" target="_blank" aria-label="LinkedIn"
+                                class="footer-social-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@digicoders" target="_blank" aria-label="YouTube"
+                                class="footer-social-icon">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="https://www.whatsapp.com/channel/0029VaDTIxW5EjxzOyubYT3l" target="_blank" aria-label="WhatsApp"
+                                class="footer-social-icon">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -647,9 +604,30 @@ software company GIDA Gorakhpur,
         <!-- Footer Bottom Bar -->
         <div class="footer-bottom">
             <div class="container">
-                <div class="footer-bottom-inner">
-                    <p class="footer-copyright">&copy; {{ date('Y') }} DigiCoders Technologies Pvt. Ltd. All rights
-                        reserved.</p>
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
+                    <p class="footer-copyright mb-0">&copy; {{ date('Y') }} DigiCoders Technologies Pvt. Ltd. All rights reserved.</p>
+                    
+                    <!-- Certification/Trust Badges -->
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                        <div class="bg-white p-1 rounded border" style="height: 38px; display: inline-flex; align-items: center; justify-content: center; width: 75px;">
+                            <img src="{{ asset('assets/images/Digital-India-digicoders.jpeg') }}" alt="Digital India" style="height: 100%; object-fit: contain; width: 100%;">
+                        </div>
+                        <div class="bg-white p-1 rounded border" style="height: 38px; display: inline-flex; align-items: center; justify-content: center; width: 75px;">
+                            <img src="{{ asset('assets/images/digicoders-gem.jpeg') }}" alt="GeM Government e Marketplace" style="height: 100%; object-fit: contain; width: 100%;">
+                        </div>
+                        <div class="bg-white p-1 rounded border" style="height: 38px; display: inline-flex; align-items: center; justify-content: center; width: 75px;">
+                            <img src="{{ asset('assets/images/digicoders-iso.jpeg') }}" alt="ISO Certified" style="height: 100%; object-fit: contain; width: 100%;">
+                        </div>
+                        <div class="bg-white p-1 rounded border" style="height: 38px; display: inline-flex; align-items: center; justify-content: center; width: 75px;">
+                            <img src="{{ asset('assets/images/digicoders-MCA.jpeg') }}" alt="Ministry of Corporate Affairs" style="height: 100%; object-fit: contain; width: 100%;">
+                        </div>
+                        <div class="bg-white p-1 rounded border" style="height: 38px; display: inline-flex; align-items: center; justify-content: center; width: 75px;">
+                            <img src="{{ asset('assets/images/digicoders-msme.jpeg') }}" alt="MSME Ministry of India" style="height: 100%; object-fit: contain; width: 100%;">
+                        </div>
+                        <div class="bg-white p-1 rounded border" style="height: 38px; display: inline-flex; align-items: center; justify-content: center; width: 75px;">
+                            <img src="{{ asset('assets/images/startup-india-digicoders.jpeg') }}" alt="Startup India" style="height: 100%; object-fit: contain; width: 100%;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

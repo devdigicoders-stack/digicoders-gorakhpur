@@ -1585,8 +1585,7 @@
                     <h2 class="fw-bold h1 mt-2" style="font-family: 'Montserrat', sans-serif;">Latest from Tech
                         Blog</h2>
                 </div>
-                <a href="https://thedigicoders.com/blog" class="btn-glass-sm mt-3 mt-md-0" target="_blank"
-                    rel="noopener noreferrer">Explore All Posts</a>
+                <a href="{{ route('blog.index') }}" class="btn-glass-sm mt-3 mt-md-0">Explore All Posts</a>
             </div>
 
             <div class="d-none" id="blog-loading-skeletons" class="row g-4">
@@ -1619,8 +1618,7 @@
                     <h5 class="fw-bold mb-3">Unable to Load Blog Posts</h5>
                     <p class="text-secondary mb-4">We are currently updating our database. You can read our live
                         blog posts directly on the main site.</p>
-                    <a href="https://thedigicoders.com/blog" class="btn btn-sm btn-premium" target="_blank"
-                        rel="noopener noreferrer">Visit DigiCoders Blog</a>
+                    <a href="{{ route('blog.index') }}" class="btn btn-sm btn-premium">Visit Tech Blog</a>
                 </div>
             </div>
         </div>
@@ -1982,15 +1980,13 @@
                                                 </div>
                                                 <div class="blog-card-body">
                                                     <h4 class="blog-card-title" title="${cleanTitle}">
-                                                        <a href="https://thedigicoders.com/blog-details/${item.url}" target="_blank" rel="noopener noreferrer">${cleanTitle}</a>
+                                                        <a href="{{ url('/blog') }}/${item.url}">${cleanTitle}</a>
                                                     </h4>
                                                     <p class="blog-card-desc">${cleanDesc}</p>
                                                     <div class="blog-card-footer">
                                                         <span class="text-secondary text-xs">${formatDate(item.date)}</span>
-                                                        <a href="https://thedigicoders.com/blog-details/${item.url}" 
-                                                           class="blog-card-btn" 
-                                                           target="_blank" 
-                                                           rel="noopener noreferrer">
+                                                        <a href="{{ url('/blog') }}/${item.url}" 
+                                                           class="blog-card-btn">
                                                             Read Post <i class="bi bi-arrow-right"></i>
                                                         </a>
                                                     </div>

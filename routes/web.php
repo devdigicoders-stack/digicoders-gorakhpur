@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -19,10 +20,8 @@ Route::redirect('/contact', 'https://thedigicoders.com/contact')->name('contact'
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 // Blog Module
-Route::redirect('/blog', 'https://thedigicoders.com/blog')->name('blog.index');
-Route::get('/blog/{slug}', function ($slug) {
-    return redirect('https://thedigicoders.com/blog-details/'.$slug);
-})->name('blog.show');
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
 // Admin Panel Guest Routes
 Route::middleware('guest')->group(function () {

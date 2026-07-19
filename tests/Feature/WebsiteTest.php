@@ -6,6 +6,7 @@ use App\Models\Blog;
 use App\Models\Course;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Http;
 use Tests\TestCase;
 
 class WebsiteTest extends TestCase
@@ -64,8 +65,8 @@ class WebsiteTest extends TestCase
     {
         $response = $this->get('/blog');
 
-        $response->assertStatus(302);
-        $response->assertRedirect('https://thedigicoders.com/blog');
+        $response->assertStatus(200);
+        $response->assertSee('Stay Updated with');
     }
 
     /**
@@ -75,10 +76,26 @@ class WebsiteTest extends TestCase
     {
         $blog = Blog::first();
 
+        Http::fake([
+            'thedigicoders.com/api/*' => Http::response([
+                [
+                    'id' => $blog->id,
+                    'title' => $blog->title,
+                    'url' => $blog->slug,
+                    'content' => $blog->content,
+                    'status' => 'true',
+                    'img' => $blog->featured_image,
+                    'date' => now()->toDateString(),
+                    'location' => 'gorakhpur',
+                    'category' => $blog->category,
+                ],
+            ], 200),
+        ]);
+
         $response = $this->get('/blog/'.$blog->slug);
 
-        $response->assertStatus(302);
-        $response->assertRedirect('https://thedigicoders.com/blog-details/'.$blog->slug);
+        $response->assertStatus(200);
+        $response->assertSee(strip_tags($blog->title));
     }
 
     /**
