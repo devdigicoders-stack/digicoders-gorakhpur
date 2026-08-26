@@ -20,8 +20,10 @@ Route::redirect('/contact', 'https://thedigicoders.com/contact')->name('contact'
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 
 // Blog Module
-Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
-Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
+Route::get('/blogs/{slug}', [BlogController::class, 'show'])->name('blogs.show');
+Route::get('/blog', fn () => redirect()->route('blogs.index'))->name('blog.index');
+Route::get('/blog/{slug}', fn ($slug) => redirect()->route('blogs.show', $slug))->name('blog.show');
 
 // Admin Panel Guest Routes
 Route::middleware('guest')->group(function () {

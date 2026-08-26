@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Seo;
 use Exception;
 use Illuminate\Http\Request;
@@ -11,6 +12,63 @@ use Illuminate\View\View;
 
 class BlogController extends Controller
 {
+    private function fetchBlogs(): array
+    {
+        return Cache::remember('blogs_list', 3600, function () {
+            $urls = [
+                'https://thedigicoders.com/api/blogs',
+                'http://thedigicoders.com/api/blogs',
+                'http://localhost/thedigicoders-com/api/blogs',
+            ];
+            $allBlogs = [];
+            foreach ($urls as $url) {
+                try {
+                    $response = Http::withoutVerifying()->timeout(5)->get($url);
+                    if ($response->successful() && is_array($response->json())) {
+                        $allBlogs = $response->json();
+                        break;
+                    }
+                } catch (Exception $e) {
+                    // Try next
+                }
+            }
+
+            if (empty($allBlogs)) {
+                try {
+                    $dbBlogs = Blog::where('status', 'published')->get();
+                    if ($dbBlogs->isNotEmpty()) {
+                        $allBlogs = $dbBlogs->map(function ($b) {
+                            return [
+                                'id' => $b->id,
+                                'title' => $b->title,
+                                'url' => $b->slug,
+                                'category' => $b->category,
+                                'img' => $b->featured_image ? asset($b->featured_image) : 'https://thedigicoders.com/public/uploads/blog/default.png',
+                                'content' => $b->content,
+                                'seo_title' => $b->seo_title,
+                                'seo_description' => $b->seo_description,
+                                'seo_keyword' => $b->seo_keywords,
+                                'status' => 'true',
+                                'location' => 'gorakhpur',
+                                'date' => $b->created_at->format('Y-m-d'),
+                            ];
+                        })->toArray();
+                    }
+                } catch (Exception $e) {
+                    // Ignore fallback exception
+                }
+            }
+
+            // Strictly filter active blogs for Gorakhpur location only
+            return array_values(array_filter($allBlogs, function ($item) {
+                $statusMatch = ! isset($item['status']) || $item['status'] === 'true' || $item['status'] === true || $item['status'] === 'published';
+                $locationVal = strtolower($item['location'] ?? $item['city'] ?? $item['branch'] ?? '');
+
+                return $statusMatch && str_contains($locationVal, 'gorakhpur');
+            }));
+        });
+    }
+
     public function index(Request $request): View
     {
         $seo = Seo::where('page_name', 'blogs')->first();
@@ -23,55 +81,21 @@ class BlogController extends Controller
             ]);
         }
 
-        return view('blogs.index', compact('seo'));
+        $blogs = $this->fetchBlogs();
+
+        return view('blogs.index', compact('seo', 'blogs'));
     }
 
     public function show(string $slug): View
     {
-        // 1. Fetch & Cache all blogs (using 1 hour / 3600 seconds cache)
-        $blogs = Cache::remember('blogs_list', 3600, function () {
-            $urls = [
-                'https://thedigicoders.com/api/blogs',
-                'http://thedigicoders.com/api/blogs',
-                'http://localhost/thedigicoders-com/api/blogs',
-            ];
-            foreach ($urls as $url) {
-                try {
-                    $response = Http::withoutVerifying()->timeout(3)->get($url);
-                    if ($response->successful()) {
-                        return $response->json();
-                    }
-                } catch (Exception $e) {
-                    // Try next
-                }
-            }
-
-            return [];
-        });
+        // 1. Fetch & Cache active Gorakhpur blogs
+        $gorakhpurBlogs = $this->fetchBlogs();
 
         $blog = null;
-        $activeBlogs = [];
-        $gorakhpurBlogs = [];
-
-        if (is_array($blogs)) {
-            // Filter active blogs
-            $activeBlogs = array_filter($blogs, function ($item) {
-                return isset($item['status']) && ($item['status'] === 'true' || $item['status'] === true);
-            });
-
-            // Filter Gorakhpur active blogs strictly
-            $gorakhpurBlogs = array_filter($activeBlogs, function ($item) {
-                $locationVal = strtolower($item['location'] ?? $item['city'] ?? $item['branch'] ?? '');
-
-                return str_contains($locationVal, 'gorakhpur');
-            });
-
-            // Search only in Gorakhpur blogs
-            foreach ($gorakhpurBlogs as $item) {
-                if (isset($item['url']) && $item['url'] === $slug) {
-                    $blog = $item;
-                    break;
-                }
+        foreach ($gorakhpurBlogs as $item) {
+            if (isset($item['url']) && $item['url'] === $slug) {
+                $blog = $item;
+                break;
             }
         }
 
@@ -108,15 +132,20 @@ class BlogController extends Controller
             default => 'Tech Trends',
         };
 
-        // 3. Format Date & SEO Details
+        // 3. Format Date, Author, FAQs & SEO Details from API fields
         $cleanTitle = strip_tags($blog['title'] ?? '');
-        $seoTitle = ! empty($blog['seo_title']) ? strip_tags($blog['seo_title']) : ($cleanTitle.' | DigiCoders Technologies Gorakhpur');
+        $seoTitle = ! empty($blog['meta_title']) ? strip_tags($blog['meta_title']) : (! empty($blog['seo_title']) ? strip_tags($blog['seo_title']) : ($cleanTitle.' | DigiCoders Technologies Gorakhpur'));
 
         $cleanContent = strip_tags($blog['content'] ?? '');
-        $seoDescription = ! empty($blog['seo_description']) ? strip_tags($blog['seo_description']) : mb_substr($cleanContent, 0, 160);
-        $seoKeywords = ! empty($blog['seo_keyword']) ? strip_tags($blog['seo_keyword']) : 'web development trends, coding guides, programming tutorials, DigiCoders, summer training, industrial training, apprenticeship training, internship training, diploma cs it, btech cs it, bca, mca';
+        $seoDescription = ! empty($blog['meta_description']) ? strip_tags($blog['meta_description']) : (! empty($blog['seo_description']) ? strip_tags($blog['seo_description']) : mb_substr($cleanContent, 0, 160));
+        $seoKeywords = ! empty($blog['keywords']) ? strip_tags($blog['keywords']) : (! empty($blog['seo_keyword']) ? strip_tags($blog['seo_keyword']) : 'web development trends, coding guides, programming tutorials, DigiCoders, summer training, industrial training, apprenticeship training, internship training, diploma cs it, btech cs it, bca, mca');
         $blogImage = $blog['img'] ?? 'https://thedigicoders.com/public/uploads/blog/default.png';
+        $imgAlt = ! empty($blog['img_alt']) ? strip_tags($blog['img_alt']) : $cleanTitle;
+        $authorName = ! empty($blog['author_name']) ? strip_tags($blog['author_name']) : 'DigiCoders Team';
+        $authorDesignation = ! empty($blog['author_designation']) ? strip_tags($blog['author_designation']) : 'Tech Expert';
+        $canonicalUrl = ! empty($blog['canonical_url']) ? trim($blog['canonical_url']) : '';
         $formattedDate = isset($blog['date']) ? date('F d, Y', strtotime($blog['date'])) : '';
+        $formattedTime = ! empty($blog['time']) ? date('h:i A', strtotime($blog['time'])) : '';
 
         $datePublished = ! empty($blog['created_at']) ? date('Y-m-d', strtotime($blog['created_at'])) : (isset($blog['date']) ? date('Y-m-d', strtotime($blog['date'])) : date('Y-m-d'));
         $dateModified = ! empty($blog['updated_at']) ? date('Y-m-d', strtotime($blog['updated_at'])) : $datePublished;
@@ -124,12 +153,21 @@ class BlogController extends Controller
         $tagArray = array_map('trim', explode(',', $seoKeywords));
         $tagArray = array_slice($tagArray, 0, 8);
 
-        // 4. Extract FAQs
+        // 4. Extract FAQs from dedicated API field or content regex fallback
         $faqs = [];
-        if (! empty($blog['content'])) {
+        if (! empty($blog['faqs'])) {
+            if (is_array($blog['faqs'])) {
+                $faqs = $blog['faqs'];
+            } elseif (is_string($blog['faqs'])) {
+                $decoded = json_decode($blog['faqs'], true);
+                if (is_array($decoded)) {
+                    $faqs = $decoded;
+                }
+            }
+        }
+        if (empty($faqs) && ! empty($blog['content'])) {
             preg_match_all('/<(h[2-4]|strong|p)[^>]*>([^<]+\?)\s*<\/ \1>\s*<p[^>]*>(.*?)<\/ p>/is', $blog['content'], $matches, PREG_SET_ORDER);
             if (empty($matches)) {
-                // Try clean matching if the first regex was too strict due to spaces
                 preg_match_all('/<(h[2-4]|strong|p)[^>]*>([^<]+\?)\s*<\/\1>\s*<p[^>]*>(.*?)<\/p>/is', $blog['content'], $matches, PREG_SET_ORDER);
             }
             foreach ($matches as $match) {
@@ -166,7 +204,12 @@ class BlogController extends Controller
             'seoDescription',
             'seoKeywords',
             'blogImage',
+            'imgAlt',
+            'authorName',
+            'authorDesignation',
+            'canonicalUrl',
             'formattedDate',
+            'formattedTime',
             'datePublished',
             'dateModified',
             'tagArray',

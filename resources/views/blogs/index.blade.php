@@ -90,7 +90,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="glass-card p-0 rounded-4 overflow-hidden border border-white border-opacity-10"
                             style="height: 420px; background: var(--glass-bg);">
-                            <div class="w-100 skeleton-pulse" style="aspect-ratio: 4 / 3; background: rgba(128,128,128,0.15);">
+                            <div class="w-100 skeleton-pulse" style="aspect-ratio: 16 / 9; background: rgba(128,128,128,0.15);">
                             </div>
                             <div class="p-4 d-flex flex-column justify-content-between" style="height: 220px;">
                                 <div>
@@ -144,8 +144,8 @@
                     <h4 class="fw-bold mb-2">Unable to Load Blog Posts</h4>
                     <p class="text-secondary mb-4">We are currently experiencing issues connecting to our blog API database.
                         Please try again later or visit our main site.</p>
-                    <a href="https://thedigicoders.com/blog" class="btn btn-premium btn-sm" target="_blank"
-                        rel="noopener noreferrer">Visit DigiCoders Blog</a>
+                    <a href="{{ url('/blogs') }}" class="btn btn-premium btn-sm" target="_blank"
+                        rel="noopener noreferrer">Visit DigiCoders Blogs</a>
                 </div>
             </div>
 
@@ -229,7 +229,7 @@
 
         .blog-card-img-wrap {
             position: relative;
-            aspect-ratio: 4 / 3;
+            aspect-ratio: 16 / 9;
             overflow: hidden;
         }
 
@@ -378,6 +378,9 @@
             const nextPageBtn = document.getElementById('next-page-btn');
             const resetSearchBtn = document.getElementById('reset-search-btn');
 
+            // Server preloaded blogs from PHP
+            const serverBlogs = @json($blogs ?? []);
+
             // API endpoints fallback
             const endpoints = [
                 'https://thedigicoders.com/api/blogs',
@@ -403,15 +406,20 @@
             // Fetch and Initialise Blogs
             const initBlogs = async () => {
                 let data = null;
-                for (const url of endpoints) {
-                    try {
-                        const response = await fetch(url);
-                        if (response.ok) {
-                            data = await response.json();
-                            break;
+
+                if (Array.isArray(serverBlogs) && serverBlogs.length > 0) {
+                    data = serverBlogs;
+                } else {
+                    for (const url of endpoints) {
+                        try {
+                            const response = await fetch(url);
+                            if (response.ok) {
+                                data = await response.json();
+                                break;
+                            }
+                        } catch (e) {
+                            console.warn(`Failed to fetch blogs from ${url}:`, e);
                         }
-                    } catch (e) {
-                        console.warn(`Failed to fetch blogs from ${url}:`, e);
                     }
                 }
 
@@ -422,9 +430,9 @@
                     return;
                 }
 
-                // Filter blogs: status "true" and location strictly containing "gorakhpur"
+                // Filter blogs: status active and location containing "gorakhpur"
                 allBlogs = data.filter(item => {
-                    const statusMatch = item.status === 'true';
+                    const statusMatch = !item.status || item.status === 'true' || item.status === true || item.status === 'published';
                     const locationVal = (item.location || item.city || item.branch || '').toLowerCase();
                     return statusMatch && locationVal.includes('gorakhpur');
                 });
@@ -554,7 +562,7 @@
                     const cleanDesc = blog.meta_description || stripTags(blog.content).substring(0, 120) + '...';
 
                     // Route link to local details page
-                    const detailUrl = `{{ url('/blog') }}/${blog.url}`;
+                    const detailUrl = `{{ url('/blogs') }}/${blog.url}`;
 
                     const col = document.createElement('div');
                     col.className = 'col-lg-4 col-md-6';
@@ -562,30 +570,30 @@
                     col.setAttribute('data-aos-delay', `${(index % 3) * 100}`);
 
                     col.innerHTML = `
-                            <div class="blog-premium-card">
-                                <div class="blog-card-img-wrap">
-                                    <span class="blog-card-category">${getCategoryLabel(blog.computedCategory)}</span>
-                                    <img src="${blog.img}" 
-                                         alt="${cleanTitle}" 
-                                         loading="lazy"
-                                         onerror="this.src='https://thedigicoders.com/public/uploads/blog/default.png';">
-                                </div>
-                                <div class="blog-card-body">
-                                    <div>
-                                        <h4 class="blog-card-title" title="${cleanTitle}">
-                                            <a href="${detailUrl}">${cleanTitle}</a>
-                                        </h4>
-                                        <p class="blog-card-desc">${cleanDesc}</p>
+                                <div class="blog-premium-card">
+                                    <div class="blog-card-img-wrap">
+                                        <span class="blog-card-category">${getCategoryLabel(blog.computedCategory)}</span>
+                                        <img src="${blog.img}" 
+                                             alt="${cleanTitle}" 
+                                             loading="lazy"
+                                             onerror="this.src='https://thedigicoders.com/public/uploads/blog/default.png';">
                                     </div>
-                                    <div class="blog-card-footer">
-                                        <span class="text-secondary text-xs" style="font-size: 0.75rem;"><i class="bi bi-calendar3 me-1"></i>${formatDate(blog.date)}</span>
-                                        <a href="${detailUrl}" class="blog-card-btn">
-                                            Read Post <i class="bi bi-arrow-right"></i>
-                                        </a>
+                                    <div class="blog-card-body">
+                                        <div>
+                                            <h4 class="blog-card-title" title="${cleanTitle}">
+                                                <a href="${detailUrl}">${cleanTitle}</a>
+                                            </h4>
+                                            <p class="blog-card-desc">${cleanDesc}</p>
+                                        </div>
+                                        <div class="blog-card-footer">
+                                            <span class="text-secondary text-xs" style="font-size: 0.75rem;"><i class="bi bi-calendar3 me-1"></i>${formatDate(blog.date)}</span>
+                                            <a href="${detailUrl}" class="blog-card-btn">
+                                                Read Post <i class="bi bi-arrow-right"></i>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        `;
+                            `;
                     gridContainer.appendChild(col);
                 });
 

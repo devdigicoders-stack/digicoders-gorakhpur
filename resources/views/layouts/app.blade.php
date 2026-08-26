@@ -259,10 +259,10 @@
                     <i class="bi bi-envelope-fill"></i>
                     digicoderstech@gmail.com
                 </a>
-                <span class="topbar-link" style="cursor: default;">
-                    <i class="bi bi-geo-alt-fill"></i>
+                <a href="https://maps.app.goo.gl/jbbN4Rq6fg9LEDBu8" target="_blank" rel="noopener noreferrer" class="topbar-link" title="Open DigiCoders Technologies Gorakhpur on Google Maps">
+                    <i class="bi bi-geo-alt-fill text-primary"></i>
                     Gida, Gorakhpur, Uttar Pradesh
-                </span>
+                </a>
             </div>
             <div class="d-flex align-items-center gap-3">
                 <span class="topbar-admission-badge">
@@ -390,7 +390,7 @@
                             rel="noopener noreferrer">
                             <span class="nav-dropdown-item-title">Gallery</span>
                         </a>
-                        <a class="nav-dropdown-item" href="{{ route('blog.index') }}">
+                        <a class="nav-dropdown-item" href="{{ route('blogs.index') }}">
                             <span class="nav-dropdown-item-title">Blogs</span>
                         </a>
                     </div>
@@ -401,8 +401,8 @@
                     rel="noopener noreferrer">Registration</a>
                 <a class="main-nav-link {{ request()->routeIs('services') ? 'is-active' : '' }}"
                     href="https://thedigicoders.com/placement" target="_blank" rel="noopener noreferrer">Placements</a>
-                <a class="main-nav-link {{ request()->routeIs('blog.*') ? 'is-active' : '' }}"
-                    href="{{ route('blog.index') }}">Blog</a>
+                <a class="main-nav-link {{ request()->routeIs('blogs.*') ? 'is-active' : '' }}"
+                    href="{{ route('blogs.index') }}">Blogs</a>
                 <a class="main-nav-link {{ request()->routeIs('contact') ? 'is-active' : '' }}"
                     href="https://thedigicoders.com/contact" target="_blank" rel="noopener noreferrer">Contact</a>
             </div>
@@ -458,13 +458,13 @@
                         <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/about" target="_blank" rel="noopener noreferrer">About Us</a>
                         <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/our-expert" target="_blank" rel="noopener noreferrer">Our Expert</a>
                         <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="https://thedigicoders.com/gallery" target="_blank" rel="noopener noreferrer">Gallery</a>
-                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="{{ route('blog.index') }}">Blogs & Articles</a>
+                        <a class="mobile-nav-link border-0 py-2 fs-6 fw-normal" href="{{ route('blogs.index') }}">Blogs & Articles</a>
                     </div>
                 </div>
 
                 <a class="mobile-nav-link {{ request()->routeIs('team') ? 'is-active' : '' }}" href="https://thedigicoders.com/registration" target="_blank" rel="noopener noreferrer">Registration</a>
                 <a class="mobile-nav-link {{ request()->routeIs('services') ? 'is-active' : '' }}" href="https://thedigicoders.com/placement" target="_blank" rel="noopener noreferrer">Placements</a>
-                <a class="mobile-nav-link {{ request()->routeIs('blog.*') ? 'is-active' : '' }}" href="{{ route('blog.index') }}">Blog</a>
+                <a class="mobile-nav-link {{ request()->routeIs('blogs.*') ? 'is-active' : '' }}" href="{{ route('blogs.index') }}">Blogs</a>
                 <a class="mobile-nav-link {{ request()->routeIs('contact') ? 'is-active' : '' }}" href="https://thedigicoders.com/contact" target="_blank" rel="noopener noreferrer">Contact</a>
                 <div class="d-flex gap-2 mt-3 pb-3">
                     <a href="https://thedigicoders.com/verify-certificate" target="_blank" rel="noopener noreferrer"
@@ -498,9 +498,22 @@
                             
                             <!-- Location Information -->
                             <div class="d-flex align-items-start gap-2 mt-4 text-secondary" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7) !important; line-height: 1.5;">
-                                <i class="bi bi-geo-alt-fill text-primary" style="margin-top: 3px; font-size: 1rem;"></i>
-                                <span>Inside Main Building, Buddha Institute of Technology, CL-1, Sector-7, GIDA, Gorakhpur, UP - 273209</span>
+                                <i class="bi bi-geo-alt-fill text-primary flex-shrink-0" style="margin-top: 3px; font-size: 1rem;"></i>
+                                <a href="https://maps.app.goo.gl/jbbN4Rq6fg9LEDBu8" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-reset hover-primary d-inline-block">
+                                    Inside Main Building, Buddha Institute of Technology, CL-1, Sector-7, GIDA, Gorakhpur, UP - 273209
+                                </a>
                             </div>
+
+                            <!-- Phone Numbers under Address -->
+                            <div class="d-flex align-items-center gap-2 mt-2 text-secondary" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7) !important;">
+                                <i class="bi bi-telephone-fill text-primary flex-shrink-0" style="font-size: 0.9rem;"></i>
+                                <div class="d-flex align-items-center gap-2 flex-wrap">
+                                    <a href="tel:9198484820" class="text-decoration-none text-reset hover-primary fw-medium" style="color: rgba(255, 255, 255, 0.85) !important;">+91-9198484820</a>
+                                    <span class="opacity-50">•</span>
+                                    <a href="tel:6394296293" class="text-decoration-none text-reset hover-primary fw-medium" style="color: rgba(255, 255, 255, 0.85) !important;">+91-6394296293</a>
+                                </div>
+                            </div>
+                           
                         </div>
                     </div>
 
@@ -529,7 +542,7 @@
                         <ul class="footer-link-list">
                             <li><a href="https://student.thedigicoders.com/" target="_blank"
                                     rel="noopener noreferrer">Student Portal</a></li>
-                            <li><a href="{{ route('blog.index') }}">Blog Articles</a></li>
+                            <li><a href="{{ route('blogs.index') }}">Blogs & Articles</a></li>
                             <li><a href="https://thedigicoders.com/placement" target="_blank"
                                     rel="noopener noreferrer">Placements</a></li>
                             <li><a href="https://thedigicoders.com/verify-certificate" target="_blank"
@@ -551,9 +564,8 @@
                                 </div>
                                 <div>
                                     <span class="footer-contact-label">Call Us</span>
-                                    <a href="tel:9801017529"
-                                        class="footer-contact-value">9801017529</a>
-                                        
+                                    <a href="tel:9198484820" class="footer-contact-value d-block">+91-9198484820</a>
+                                    <a href="tel:6394296293" class="footer-contact-value d-block">+91-6394296293</a>
                                 </div>
                             </div>
                             <div class="footer-contact-item">
@@ -599,6 +611,84 @@
                                 class="footer-social-icon">
                                 <i class="bi bi-whatsapp"></i>
                             </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corporate Legal Details Section (Modern Glassmorphic Cards) -->
+                <div class="mt-5 pt-4 border-top text-start" style="border-top-color: rgba(255, 255, 255, 0.08) !important;">
+                    <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
+                        <span class="text-uppercase fw-bold text-xs" style="color: var(--primary); letter-spacing: 1px;">
+                            <i class="bi bi-shield-lock-fill me-1"></i> Corporate & Legal Information
+                        </span>
+                        <span class="badge bg-success bg-opacity-10 text-success border border-success border-opacity-20 px-2 py-1 rounded-pill text-xs fw-medium">
+                            <i class="bi bi-patch-check-fill me-1"></i> Ministry of Corporate Affairs Verified
+                        </span>
+                    </div>
+
+                    <div class="row g-3">
+                        <!-- Card 1: Legal Entity -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="p-3 rounded-4 h-100 transition-all" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px);">
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="rounded-3 p-2 d-flex align-items-center justify-content-center flex-shrink-0" style="background: rgba(0, 109, 171, 0.15); color: var(--primary); width: 42px; height: 42px;">
+                                        <i class="bi bi-shield-check fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <span class="d-block text-uppercase fw-semibold text-xs mb-1" style="color: rgba(255, 255, 255, 0.5); letter-spacing: 0.5px;">Legal Entity</span>
+                                        <strong class="d-block text-white lh-sm mb-1" style="font-size: 0.85rem;">DigiCoders Technologies Pvt. Ltd.</strong>
+                                        <span class="badge bg-white bg-opacity-10 text-white-50 font-normal text-xs" style="font-size: 0.72rem;">Type: Private Limited</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Registration Details -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="p-3 rounded-4 h-100 transition-all" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px);">
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="rounded-3 p-2 d-flex align-items-center justify-content-center flex-shrink-0" style="background: rgba(0, 109, 171, 0.15); color: var(--primary); width: 42px; height: 42px;">
+                                        <i class="bi bi-file-earmark-text fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <span class="d-block text-uppercase fw-semibold text-xs mb-1" style="color: rgba(255, 255, 255, 0.5); letter-spacing: 0.5px;">Registration (CIN)</span>
+                                        <code class="d-block text-info bg-dark bg-opacity-50 px-2 py-0.5 rounded text-xs fw-semibold mb-1" style="font-family: monospace; letter-spacing: 0.5px; width: fit-content;">U72900UP2019PTC113696</code>
+                                        <span class="text-white-50 d-block text-xs" style="font-size: 0.75rem;">Inc: 14-Feb-2019</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Tax Registration -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="p-3 rounded-4 h-100 transition-all" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px);">
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="rounded-3 p-2 d-flex align-items-center justify-content-center flex-shrink-0" style="background: rgba(0, 109, 171, 0.15); color: var(--primary); width: 42px; height: 42px;">
+                                        <i class="bi bi-receipt-cutoff fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <span class="d-block text-uppercase fw-semibold text-xs mb-1" style="color: rgba(255, 255, 255, 0.5); letter-spacing: 0.5px;">Tax Registration</span>
+                                        <code class="d-block text-success bg-dark bg-opacity-50 px-2 py-0.5 rounded text-xs fw-semibold mb-1" style="font-family: monospace; letter-spacing: 0.5px; width: fit-content;">09AAHCD1032D1Z6</code>
+                                        <span class="text-white-50 d-block text-xs" style="font-size: 0.75rem;">Govt. Registered GSTIN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Registered Office -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="p-3 rounded-4 h-100 transition-all" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); backdrop-filter: blur(10px);">
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="rounded-3 p-2 d-flex align-items-center justify-content-center flex-shrink-0" style="background: rgba(0, 109, 171, 0.15); color: var(--primary); width: 42px; height: 42px;">
+                                        <i class="bi bi-geo-alt-fill fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <span class="d-block text-uppercase fw-semibold text-xs mb-1" style="color: rgba(255, 255, 255, 0.5); letter-spacing: 0.5px;">Registered Office</span>
+                                        <span class="d-block text-white lh-sm fw-medium mb-1" style="font-size: 0.82rem;">B-36, Sector-'O', Aliganj</span>
+                                        <span class="text-white-50 d-block text-xs" style="font-size: 0.75rem;">Lucknow, UP - 226024</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

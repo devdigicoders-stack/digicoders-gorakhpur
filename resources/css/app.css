@@ -2724,7 +2724,7 @@ a.btn-premium-outline,
     margin-bottom: 0.3rem;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     letter-spacing: 0.5px;
 }
 
@@ -2737,7 +2737,7 @@ a.btn-premium-outline,
     font-weight: 600;
     margin-top: 0.2rem;
     text-shadow: none;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     letter-spacing: 0.5px;
 }
 
@@ -2926,7 +2926,7 @@ a.btn-premium-outline,
 
 .blog-card-img-wrap {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
     position: relative;
     background: rgba(0, 0, 0, 0.05);
@@ -4741,11 +4741,13 @@ a.footer-contact-value:hover {
         width: auto !important;
         margin-left: 0 !important;
     }
+
     .main-navbar>.container {
         min-height: 60px !important;
         padding-top: 8px !important;
         padding-bottom: 8px !important;
     }
+
     .mobile-toggler {
         width: 34px !important;
         height: 34px !important;

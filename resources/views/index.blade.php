@@ -1585,7 +1585,7 @@
                     <h2 class="fw-bold h1 mt-2" style="font-family: 'Montserrat', sans-serif;">Latest from Tech
                         Blog</h2>
                 </div>
-                <a href="{{ route('blog.index') }}" class="btn-glass-sm mt-3 mt-md-0">Explore All Posts</a>
+                <a href="{{ route('blogs.index') }}" class="btn-glass-sm mt-3 mt-md-0">Explore All Posts</a>
             </div>
 
             <div class="d-none" id="blog-loading-skeletons" class="row g-4">
@@ -1618,7 +1618,7 @@
                     <h5 class="fw-bold mb-3">Unable to Load Blog Posts</h5>
                     <p class="text-secondary mb-4">We are currently updating our database. You can read our live
                         blog posts directly on the main site.</p>
-                    <a href="{{ route('blog.index') }}" class="btn btn-sm btn-premium">Visit Tech Blog</a>
+                    <a href="{{ route('blogs.index') }}" class="btn btn-sm btn-premium">Visit Tech Blogs</a>
                 </div>
             </div>
         </div>
@@ -1793,12 +1793,14 @@
     </section>
 
     <!-- 15. Google Map -->
-    <section class="section-padding position-relative" style="height: 400px; margin-bottom: -1px;">
-        <div class="container h-100 d-flex align-items-center">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.803328514588!2d83.2692523!3d26.7392969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399147380139859b%3A0x708768ccb2c065c9!2sBuddha%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1718000000000"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" title="DigiCoders Technologies Location Map"></iframe>
+    <section class="section-padding position-relative py-4" style="margin-bottom: -1px;">
+        <div class="container">
+            <div class="rounded-4 overflow-hidden shadow-lg border border-white border-opacity-10" style="height: 400px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3386.8704010846063!2d83.2713807!3d26.7388471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399147e74ee92b4f%3A0x4fb76c52161857f!2sDigiCoders%20Technologies%20-%20Gorakhpur!5e1!3m2!1sen!2sin!4v1787733247900!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin" title="DigiCoders Technologies - Gorakhpur Location Map"></iframe>
+            </div>
         </div>
     </section>
 
@@ -1980,12 +1982,12 @@
                                                 </div>
                                                 <div class="blog-card-body">
                                                     <h4 class="blog-card-title" title="${cleanTitle}">
-                                                        <a href="{{ url('/blog') }}/${item.url}">${cleanTitle}</a>
+                                                        <a href="{{ url('/blogs') }}/${item.url}">${cleanTitle}</a>
                                                     </h4>
                                                     <p class="blog-card-desc">${cleanDesc}</p>
                                                     <div class="blog-card-footer">
                                                         <span class="text-secondary text-xs">${formatDate(item.date)}</span>
-                                                        <a href="{{ url('/blog') }}/${item.url}" 
+                                                        <a href="{{ url('/blogs') }}/${item.url}" 
                                                            class="blog-card-btn">
                                                             Read Post <i class="bi bi-arrow-right"></i>
                                                         </a>
