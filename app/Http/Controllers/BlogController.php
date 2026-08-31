@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Blog;
-use App\Models\Seo;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
@@ -29,40 +27,18 @@ class BlogController extends Controller
                         break;
                     }
                 } catch (Exception $e) {
-                    // Try next
+                    // Try next API URL safely
                 }
             }
 
             if (empty($allBlogs)) {
-                try {
-                    $dbBlogs = Blog::where('status', 'published')->get();
-                    if ($dbBlogs->isNotEmpty()) {
-                        $allBlogs = $dbBlogs->map(function ($b) {
-                            return [
-                                'id' => $b->id,
-                                'title' => $b->title,
-                                'url' => $b->slug,
-                                'category' => $b->category,
-                                'img' => $b->featured_image ? asset($b->featured_image) : 'https://thedigicoders.com/public/uploads/blog/default.png',
-                                'content' => $b->content,
-                                'seo_title' => $b->seo_title,
-                                'seo_description' => $b->seo_description,
-                                'seo_keyword' => $b->seo_keywords,
-                                'status' => 'true',
-                                'location' => 'gorakhpur',
-                                'date' => $b->created_at->format('Y-m-d'),
-                            ];
-                        })->toArray();
-                    }
-                } catch (Exception $e) {
-                    // Ignore fallback exception
-                }
+                return [];
             }
 
             // Strictly filter active blogs for Gorakhpur location only
             return array_values(array_filter($allBlogs, function ($item) {
                 $statusMatch = ! isset($item['status']) || $item['status'] === 'true' || $item['status'] === true || $item['status'] === 'published';
-                $locationVal = strtolower($item['location'] ?? $item['city'] ?? $item['branch'] ?? '');
+                $locationVal = strtolower($item['location'] ?? $item['city'] ?? $item['branch'] ?? 'gorakhpur');
 
                 return $statusMatch && str_contains($locationVal, 'gorakhpur');
             }));
@@ -71,15 +47,12 @@ class BlogController extends Controller
 
     public function index(Request $request): View
     {
-        $seo = Seo::where('page_name', 'blogs')->first();
-        if (! $seo) {
-            $seo = new Seo([
-                'meta_title' => 'Latest Tech Blogs & Tutorials | DigiCoders Technologies',
-                'meta_description' => 'Read our latest tech articles, tutorials, and success stories from the IT industry. Learn, build, innovate, and get placed.',
-                'meta_keywords' => 'DigiCoders Blog, Tech Articles, Summer Training Gorakhpur, Coding Tutorials, Web Development',
-                'og_image' => 'assets/images/seo/blogs-og.webp',
-            ]);
-        }
+        $seo = (object) [
+            'meta_title' => 'Latest Tech Blogs & Tutorials | DigiCoders Technologies',
+            'meta_description' => 'Read our latest tech articles, tutorials, and success stories from the IT industry. Learn, build, innovate, and get placed.',
+            'meta_keywords' => 'DigiCoders Blog, Tech Articles, Summer Training Gorakhpur, Coding Tutorials, Web Development',
+            'og_image' => 'assets/images/seo/blogs-og.webp',
+        ];
 
         $blogs = $this->fetchBlogs();
 
@@ -88,7 +61,7 @@ class BlogController extends Controller
 
     public function show(string $slug): View
     {
-        // 1. Fetch & Cache active Gorakhpur blogs
+        // 1. Fetch & Cache active Gorakhpur blogs from API
         $gorakhpurBlogs = $this->fetchBlogs();
 
         $blog = null;
@@ -185,13 +158,13 @@ class BlogController extends Controller
         });
         $recentBlogs = array_slice($recentBlogs, 0, 5);
 
-        // 6. Create SEO model instance expected by layouts.app
-        $seo = new Seo([
+        // 6. Create SEO object without database call
+        $seo = (object) [
             'meta_title' => $seoTitle,
             'meta_description' => $seoDescription,
             'meta_keywords' => $seoKeywords,
             'og_image' => $blogImage,
-        ]);
+        ];
 
         return view('blogs.show', compact(
             'blog',

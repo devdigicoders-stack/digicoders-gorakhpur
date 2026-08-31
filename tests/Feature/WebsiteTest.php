@@ -63,7 +63,7 @@ class WebsiteTest extends TestCase
      */
     public function test_blog_index_loads(): void
     {
-        $response = $this->get('/blog');
+        $response = $this->get('/blogs');
 
         $response->assertStatus(200);
         $response->assertSee('Stay Updated with');
@@ -74,28 +74,26 @@ class WebsiteTest extends TestCase
      */
     public function test_blog_show_loads(): void
     {
-        $blog = Blog::first();
-
         Http::fake([
             'thedigicoders.com/api/*' => Http::response([
                 [
-                    'id' => $blog->id,
-                    'title' => $blog->title,
-                    'url' => $blog->slug,
-                    'content' => $blog->content,
+                    'id' => 1,
+                    'title' => 'Test Blog Title',
+                    'url' => 'test-blog-slug',
+                    'content' => 'Test blog content',
                     'status' => 'true',
-                    'img' => $blog->featured_image,
+                    'img' => 'https://thedigicoders.com/public/uploads/blog/default.png',
                     'date' => now()->toDateString(),
                     'location' => 'gorakhpur',
-                    'category' => $blog->category,
+                    'category' => 'trends',
                 ],
             ], 200),
         ]);
 
-        $response = $this->get('/blog/'.$blog->slug);
+        $response = $this->get('/blogs/test-blog-slug');
 
         $response->assertStatus(200);
-        $response->assertSee(strip_tags($blog->title));
+        $response->assertSee('Test Blog Title');
     }
 
     /**

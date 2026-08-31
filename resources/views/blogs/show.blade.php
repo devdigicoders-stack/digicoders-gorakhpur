@@ -653,24 +653,113 @@
             const tocList = document.getElementById('tocList');
 
             if (articleContent && tocWidget && tocList) {
-                const headings = articleContent.querySelectorAll('h2, h3, h4');
-                if (headings.length > 0) {
-                    headings.forEach((heading, idx) => {
-                        // Create unique ID if not present
+                // 1. Hide unwanted raw contact / footer text blocks from article body if present
+                const bodyEls = articleContent.querySelectorAll('h1, h2, h3, h4, h5, h6, p, div');
+                const unwantedTerms = [
+                    'contact us:-', 'visit our websites:', 'visit digicoders gorakhpur:-',
+                    'get touch with us', 'get in touch with us'
+                ];
+                bodyEls.forEach((el) => {
+                    const txt = (el.innerText || '').toLowerCase().trim();
+                    if (unwantedTerms.some(term => txt.includes(term))) {
+                        el.style.display = 'none';
+                    }
+                });
+
+                // 2. Parse and build Table of Contents dynamically
+                tocList.innerHTML = '';
+                const candidates = articleContent.querySelectorAll('h1, h2, h3, h4, h5, h6, p, div');
+                const headingElements = [];
+
+                const isUnwantedHeading = (text) => {
+                    const lower = text.toLowerCase().trim();
+                    if (!lower) return true;
+                    return (
+                        lower.includes('contact') ||
+                        lower.includes('visit our') ||
+                        lower.includes('visit digicoders') ||
+                        lower.includes('get touch') ||
+                        lower.includes('get in touch') ||
+                        lower.includes('thedigicoders.com') ||
+                        lower.includes('digicodersgorakhpur.com') ||
+                        lower.includes('+91') ||
+                        lower.includes('follow us') ||
+                        lower.includes('phone number') ||
+                        lower.includes('call us') ||
+                        lower.includes('whatsapp us') ||
+                        lower.includes('start your industrial training journey today')
+                    );
+                };
+
+                candidates.forEach((el) => {
+                    if (el.style.display === 'none' || el.offsetParent === null) {
+                        return;
+                    }
+
+                    const tagName = el.tagName.toLowerCase();
+                    const rawText = el.innerText ? el.innerText.trim() : '';
+                    const text = rawText.replace(/\s+/g, ' ');
+
+                    if (!text || isUnwantedHeading(text)) {
+                        return;
+                    }
+
+                    let isHeading = false;
+                    let level = 2;
+
+                    if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(tagName)) {
+                        isHeading = true;
+                        level = parseInt(tagName.replace('h', '')) || 2;
+                    } else if (tagName === 'p' || tagName === 'div') {
+                        const styleAttr = el.getAttribute('style') || '';
+                        const hasOutlineLevel = styleAttr.includes('mso-outline-level');
+                        const hasLargeFont = /font-size\s*:\s*(1[3-9]|[2-9][0-9])(\.[0-9]+)?(pt|px|rem|em)/i.test(styleAttr);
+
+                        const boldChild = el.querySelector('b, strong');
+                        let isOnlyBold = false;
+                        if (boldChild) {
+                            const boldText = (boldChild.innerText || '').trim().replace(/\s+/g, ' ');
+                            if (boldText === text) {
+                                isOnlyBold = true;
+                            }
+                        }
+
+                        if ((hasOutlineLevel || hasLargeFont || isOnlyBold) && text.length >= 3 && text.length <= 110) {
+                            if (!text.endsWith('.') || text.endsWith('?') || text.endsWith(':') || hasOutlineLevel) {
+                                isHeading = true;
+                                if (hasOutlineLevel) {
+                                    const matchLevel = styleAttr.match(/mso-outline-level\s*:\s*([0-9]+)/i);
+                                    level = matchLevel ? parseInt(matchLevel[1]) : 2;
+                                } else if (/^[0-9]+\./.test(text) || text.endsWith('?')) {
+                                    level = 3;
+                                } else {
+                                    level = 2;
+                                }
+                            }
+                        }
+                    }
+
+                    if (isHeading) {
+                        headingElements.push({ el, text, level });
+                    }
+                });
+
+                if (headingElements.length > 0) {
+                    // Ignore H1 title if it's the main blog header repeated
+                    const filteredHeadings = headingElements.filter((item, idx) => {
+                        return !(idx === 0 && item.level === 1);
+                    });
+
+                    filteredHeadings.forEach((item, idx) => {
+                        const heading = item.el;
                         if (!heading.id) {
                             heading.id = 'heading-' + idx;
                         }
 
                         const link = document.createElement('a');
-                        let levelClass = '';
-                        if (heading.tagName === 'H3') {
-                            levelClass = ' toc-h3';
-                        } else if (heading.tagName === 'H4') {
-                            levelClass = ' toc-h3 ps-4 opacity-75';
-                        }
-
+                        let levelClass = item.level > 2 ? ' toc-h3' : '';
                         link.className = 'toc-item' + levelClass;
-                        link.innerText = heading.innerText;
+                        link.innerText = item.text;
                         link.href = '#' + heading.id;
 
                         link.addEventListener('click', (e) => {
