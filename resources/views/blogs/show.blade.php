@@ -674,12 +674,13 @@
                 const isUnwantedHeading = (text) => {
                     const lower = text.toLowerCase().trim();
                     if (!lower) return true;
-                    return (
+                    return 
+                    (
                         lower.includes('contact') ||
-                        lower.includes('visit our') ||
-                        lower.includes('visit digicoders') ||
-                        lower.includes('get touch') ||
-                        lower.includes('get in touch') ||
+                        lower.includes('visit our') || 
+                        lower.includes('visit digicoders') || 
+                        lower.includes('get touch') || 
+                        lower.includes('get in touch') || 
                         lower.includes('thedigicoders.com') ||
                         lower.includes('digicodersgorakhpur.com') ||
                         lower.includes('+91') ||
@@ -724,17 +725,20 @@
                             }
                         }
 
-                        if ((hasOutlineLevel || hasLargeFont || isOnlyBold) && text.length >= 3 && text.length <= 110) {
+                        if ((hasOutlineLevel || hasLargeFont || isOnlyBold) && text.length >=3 && text.length <= 110) {
                             if (!text.endsWith('.') || text.endsWith('?') || text.endsWith(':') || hasOutlineLevel) {
                                 isHeading = true;
                                 if (hasOutlineLevel) {
                                     const matchLevel = styleAttr.match(/mso-outline-level\s*:\s*([0-9]+)/i);
                                     level = matchLevel ? parseInt(matchLevel[1]) : 2;
-                                } else if (/^[0-9]+\./.test(text) || text.endsWith('?')) {
-                                    level = 3;
-                                } else {
-                                    level = 2;
                                 }
+                                else if (/^[0-9]+\./.test(text) || text.endsWith('?')) {
+                                    level = 3;
+                                }
+                                 else
+                                  {
+                                    level = 2;
+                                  }
                             }
                         }
                     }
@@ -743,7 +747,6 @@
                         headingElements.push({ el, text, level });
                     }
                 });
-
                 if (headingElements.length > 0) {
                     // Ignore H1 title if it's the main blog header repeated
                     const filteredHeadings = headingElements.filter((item, idx) => {
