@@ -26,9 +26,6 @@
           "mainEntityOfPage": "{{ url()->current() }}"
         }
         </script>
-    @if(!empty($canonicalUrl))
-        <link rel="canonical" href="{{ $canonicalUrl }}" />
-    @endif
 
     <script type="application/ld+json">
         {

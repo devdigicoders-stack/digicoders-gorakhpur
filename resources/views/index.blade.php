@@ -143,7 +143,7 @@
                 <span class="hero-tech-strip-label">Technologies You'll Work With</span>
                 <div class="d-flex flex-wrap align-items-center gap-3 hero-tech-icons">
                     {{-- Python --}}
-                    <span class="tech-icon-item">
+                    <span class="tech-icon-item" title="Python dev in lucknow - Python Programming, AI & Web Development">
                         <svg width="16" height="16" viewBox="0 0 128 128" class="me-1">
                             <path
                                 d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"
@@ -155,7 +155,7 @@
                         Python
                     </span>
                     {{-- Java --}}
-                    <span class="tech-icon-item">
+                    <span class="tech-icon-item" title="Java Enterprise Development - Spring Boot & J2EE Architecture">
                         <svg width="16" height="16" viewBox="0 0 128 128" class="me-1">
                             <path
                                 d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"
@@ -176,7 +176,7 @@
                         Java
                     </span>
                     {{-- PHP --}}
-                    <span class="tech-icon-item">
+                    <span class="tech-icon-item" title="Core php - Core PHP Web Development & Database Security">
                         <svg width="16" height="16" viewBox="0 0 128 128" class="me-1">
                             <path
                                 d="M64 33.039c-33.74 0-61.094 13.862-61.094 30.961S30.26 94.961 64 94.961 125.094 81.1 125.094 64 97.74 33.039 64 33.039zm-15.897 32.159H42.78l-2.498 12.969H31.16L38.298 40.4h19.132c7.333 0 11.428 4.368 10.063 11.505-1.46 7.508-7.698 13.293-19.39 13.293zm30.117 0h-5.323l-2.498 12.969H61.277L68.415 40.4h19.132c7.333 0 11.428 4.368 10.063 11.505-1.46 7.508-7.698 13.293-19.39 13.293zm22.476 12.969h-9.122L94.67 55.198h-6.453l-2.02 10.481c-1.462 7.637 2.431 12.488 9.564 12.488 1.143 0 2.411-.165 3.563-.454l-1.609 8.354c-1.362.289-2.769.454-4.175.454-12.537 0-19.47-7.184-17.345-18.523l2.369-12.8h-4.668l1.62-8.437h4.668l1.82-9.46h9.122l-1.82 9.46h6.453l-1.62 8.437h-1.143l-2.499 12.969z"
@@ -185,7 +185,7 @@
                         PHP
                     </span>
                     {{-- Laravel --}}
-                    <span class="tech-icon-item">
+                    <span class="tech-icon-item" title="Laravel dev in lucknow - Laravel 12 MVC Framework & REST APIs">
                         <svg width="16" height="16" viewBox="0 0 50 52" class="me-1" fill="none">
                             <path
                                 d="M49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1-.402.694l-9.209 5.302V39.25c0 .286-.152.55-.4.694L20.42 51.01c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1-.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054L.402 39.944A.801.801 0 0 1 0 39.25V6.334c0-.072.01-.144.028-.209.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.017.024.04.045.054.071.023.039.036.082.052.124.008.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.553v-9.132l-4.57 2.619-13.05 7.473v9.216l17.62-10.176zM1.602 7.719v31.068l17.619 10.17v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066-.025-.02-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084-.02-.027-.044-.05-.059-.078l-.001-.002c-.018-.03-.029-.066-.042-.1-.013-.03-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-.002-21.481L4.965 9.654 1.602 7.72zm8.81-5.994L2.405 6.334l8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764l4.645-2.674V7.719l-3.363 1.936-4.646 2.675v20.096l3.364-1.937zM39.243 7.164l-8.006 4.609 8.006 4.609 8.005-4.61-8.005-4.608zm-.801 10.605-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937v-9.124zM20.02 38.33l11.743-6.704 5.87-3.35-7.982-4.597-9.211 5.303-8.395 4.833 7.975 4.515z"
@@ -194,7 +194,7 @@
                         Laravel
                     </span>
                     {{-- React --}}
-                    <span class="tech-icon-item">
+                    <span class="tech-icon-item" title="React.js - Modern Frontend Single Page Web Applications">
                         <svg width="16" height="16" viewBox="0 0 128 128" class="me-1">
                             <g fill="#61DAFB">
                                 <circle cx="64" cy="64" r="11.4" />
@@ -205,7 +205,7 @@
                         React
                     </span>
                     {{-- Node.js --}}
-                    <span class="tech-icon-item">
+                    <span class="tech-icon-item" title="Node.js - Asynchronous Microservices & Backend Express APIs">
                         <svg width="16" height="16" viewBox="0 0 128 128" class="me-1">
                             <path
                                 d="M114.36 37.12L68.4 10.44a8.69 8.69 0 00-8.8 0L13.64 37.12A8.74 8.74 0 009.2 44.7v53.34a8.74 8.74 0 004.44 7.58l45.96 26.68a8.69 8.69 0 008.8 0l45.96-26.68a8.74 8.74 0 004.44-7.58V44.7a8.74 8.74 0 00-4.44-7.58z"
@@ -217,7 +217,7 @@
                         Node.js
                     </span>
                     {{-- MySQL --}}
-                    <span class="tech-icon-item">
+                    <span class="tech-icon-item" title="MySQL - Relational Database Management & Query Optimization">
                         <svg width="16" height="16" viewBox="0 0 128 128" class="me-1">
                             <path
                                 d="M2 9.227h10.93l.52.01c3.2.07 6.12 1.27 8.67 2.84 3.61 2.21 7.1 5.81 9.23 9.49 1.15 1.99 2.02 4.3 2.25 6.59l.04.5c.09 1.15.14 2.32.09 3.48-.3 6.88-3.7 13.44-9.47 17.58-3.01 2.14-6.4 3.41-9.97 3.68-.98.07-1.97.1-2.96.08H2V9.227zm7.24 6.143v31.237h2.86l1.24-.04c1.27-.07 2.5-.32 3.68-.78 3.28-1.27 5.94-3.98 7.4-7.13 1.05-2.27 1.46-4.78 1.41-7.26-.07-3.84-1.26-7.71-3.71-10.68-1.71-2.08-3.99-3.63-6.53-4.38-.87-.26-1.76-.41-2.66-.44l-1.64-.04-.05.52zM45.52 26.42h12.05l.01 5.33c1.15-1.79 2.58-3.39 4.33-4.56 1.68-1.12 3.66-1.78 5.68-1.78.88 0 1.75.12 2.59.35l-.86 6.38a8.35 8.35 0 0 0-2.38-.35c-1.37 0-2.69.39-3.82 1.09-1.81 1.1-3.16 2.85-3.94 4.78-.56 1.38-.79 2.88-.79 4.38v11.22H45.52V26.42zM90.93 24.9c5.91 0 11.26 2.49 14.71 6.76l.36.45-5.07 4.52c-2.11-2.89-5.34-4.71-8.99-4.71-3.19 0-6.06 1.36-8.03 3.52-1.97 2.16-3.16 5.11-3.16 8.33 0 3.19 1.19 6.11 3.14 8.26 1.96 2.15 4.81 3.5 7.98 3.5 3.59 0 6.76-1.77 8.87-4.59l5.1 4.49-.39.48C101.97 59.71 96.63 62 90.79 62c-5.94 0-11.3-2.49-15.01-6.5-3.38-3.65-5.44-8.58-5.44-13.99 0-5.43 2.06-10.38 5.44-14.04C79.5 27.44 84.9 24.9 90.93 24.9zM118.03 26.42v13.56c0 3.54.08 7.33 1.7 10.42 1.15 2.17 3.16 3.82 5.44 4.45l.38.1-1.93 5.47c-4.24-.97-7.7-3.85-9.56-7.72-2.04-4.24-2.19-8.96-2.19-13.36V26.42h6.16z"
@@ -229,7 +229,7 @@
                         MySQL
                     </span>
                     {{-- MongoDB --}}
-                    <span class="tech-icon-item">
+                    <span class="tech-icon-item" title="MongoDB - NoSQL Database Schema & High-Throughput Storage">
                         <svg width="16" height="16" viewBox="0 0 128 128" class="me-1">
                             <path
                                 d="M87.96 25.23C81.1 16.25 71.83 9.66 64.02 3 56.21 9.66 46.94 16.25 40.08 25.23 23.77 46.5 27.72 74.44 27.72 74.44s9.57-6.07 13.2-13.05c1.83 7.54 5.55 16.38 15.48 23.87 1.3.98 1.73 1.91 1.59 3.12-.42 3.56-.68 7.14-.91 10.72-.05.79-.12 1.59-.12 2.39a.67.67 0 0 0 .67.66.63.63 0 0 0 .29-.07c2.6-1.24 5.37-2.48 6.35-5.52.44-1.37.61-2.85.77-4.29.11-1.04.21-2.07.39-3.07a.91.91 0 0 1 .4-.64c11.72-7.86 14.79-18.97 16.08-25.13 3.63 6.98 13.2 13.05 13.2 13.05s3.94-27.94-12.36-49.25"
@@ -244,7 +244,7 @@
                         MongoDB
                     </span>
                     {{-- Flutter --}}
-                    <span class="tech-icon-item">
+                    <span class="tech-icon-item" title="Flutter - Mobile App Dev in Lucknow Cross-Platform Framework">
                         <svg width="16" height="16" viewBox="0 0 128 128" class="me-1">
                             <g fill="#3FB6D3">
                                 <path
@@ -256,7 +256,7 @@
                         Flutter
                     </span>
                     {{-- AWS --}}
-                    <span class="tech-icon-item">
+                    <span class="tech-icon-item" title="AWS Cloud - Enterprise Hosting & Server Infrastructure">
                         <svg width="20" height="12" viewBox="0 0 50 30" class="me-1" fill="none">
                             <path
                                 d="M14.01 12.08c0 .52.06 1 .17 1.4.12.4.28.84.52 1.3.08.14.12.27.12.4 0 .17-.1.35-.32.52l-1.05.7c-.15.1-.3.15-.44.15-.17 0-.35-.08-.52-.25a5.38 5.38 0 0 1-.63-.82 13.4 13.4 0 0 1-.54-1.06c-1.36 1.6-3.07 2.4-5.13 2.4-1.47 0-2.64-.42-3.5-1.26-.86-.84-1.3-1.96-1.3-3.35 0-1.48.52-2.68 1.57-3.58 1.05-.9 2.44-1.35 4.2-1.35.58 0 1.18.05 1.8.14.63.1 1.27.23 1.95.4V7.47c0-1.3-.27-2.22-.8-2.74-.55-.52-1.46-.78-2.76-.78-.6 0-1.2.07-1.83.22-.63.15-1.24.34-1.84.58-.27.12-.47.2-.58.22-.12.03-.2.04-.28.04-.24 0-.36-.17-.36-.52V3.37c0-.27.04-.47.12-.6.08-.12.24-.24.48-.36a12.5 12.5 0 0 1 2.36-.75 11.5 11.5 0 0 1 2.76-.32c2.1 0 3.63.48 4.6 1.44.96.96 1.44 2.42 1.44 4.38v5.77zm-7.1 2.66c.56 0 1.14-.1 1.75-.3.6-.2 1.14-.57 1.6-1.08.27-.32.47-.67.57-1.06.1-.4.17-.87.17-1.43v-.7a14.16 14.16 0 0 0-1.54-.28 12.57 12.57 0 0 0-1.57-.1c-1.12 0-1.94.22-2.5.67-.55.45-.82 1.08-.82 1.9 0 .78.2 1.36.6 1.74.4.4.96.6 1.7.6h.04zm13.5 1.82c-.3 0-.5-.05-.63-.16-.13-.1-.24-.3-.34-.6L16.1 2.88a2.94 2.94 0 0 1-.15-.64c0-.26.13-.4.38-.4h1.56c.31 0 .52.05.64.16.13.1.23.3.33.6l2.84 11.2 2.64-11.2c.08-.3.18-.5.3-.6.13-.1.35-.16.65-.16h1.27c.31 0 .52.05.65.16.12.1.23.3.3.6l2.67 11.34L32.9 2.6c.1-.3.2-.5.33-.6.13-.1.34-.16.64-.16h1.48c.26 0 .4.13.4.4 0 .08-.01.16-.03.24-.02.08-.05.19-.1.34L31.8 15.8c-.1.3-.2.5-.34.6-.13.1-.34.16-.63.16h-1.37c-.31 0-.52-.05-.65-.16-.12-.1-.23-.3-.3-.62L26.9 4.1l-2.6 11.7c-.08.3-.18.5-.3.62-.13.1-.35.16-.65.16h-1.36zm20.2.44c-.83 0-1.66-.1-2.46-.3-.8-.2-1.43-.42-1.85-.68-.26-.15-.44-.31-.5-.46a1.17 1.17 0 0 1-.1-.47v-.73c0-.35.13-.52.38-.52.1 0 .2.02.3.06.1.04.25.1.41.17.55.24 1.15.44 1.78.57.64.13 1.27.2 1.91.2.76 0 1.7-.15 2.08-.45a1.5 1.5 0 0 0 .6-1.2c0-.35-.11-.64-.34-.88-.23-.24-.66-.45-1.3-.65l-1.86-.58c-.94-.3-1.63-.73-2.06-1.3a3.16 3.16 0 0 1-.64-1.93c0-.55.12-1.04.36-1.47.24-.42.56-.79.96-1.08.4-.3.86-.53 1.4-.69.54-.16 1.1-.23 1.7-.23.3 0 .6.02.9.06.3.04.59.1.87.16.27.06.53.14.77.22.24.08.43.16.57.24.2.12.34.24.42.36.08.12.12.28.12.48v.68c0 .35-.13.53-.38.53-.13 0-.34-.07-.63-.2a7.6 7.6 0 0 0-3.12-.62c-.92 0-1.55.15-1.95.45-.4.3-.6.74-.6 1.33 0 .35.12.65.36.9.24.24.7.47 1.38.68l1.83.56c.93.3 1.6.72 2 1.26.4.55.6 1.17.6 1.87 0 .56-.12 1.07-.34 1.52-.23.45-.54.85-.95 1.17-.41.34-.9.59-1.47.76-.6.18-1.22.27-1.88.27h.02z"
@@ -351,7 +351,7 @@
                     <div class="about-image-wrapper">
                         <div class="about-img-container">
                             <img src="{{ asset('assets/images/hero-office.jpg') }}"
-                                class="about-img" alt="DigiCoders IT Training Classroom">
+                                class="about-img" alt="DigiCoders IT Training Classroom" title="DigiCoders Technologies IT Training Classroom & Software Development Office">
                         </div>
                     </div>
                 </div>
@@ -369,6 +369,7 @@
                         <div class="glass-card overflow-hidden shadow-lg border border-light" style="border-radius: 12px !important;">
                             <img src="{{ asset('assets/images/team/Abhishek-singh-branch-manager-gorakhpur-digicoders.jpg') }}" 
                                  alt="Abhishek Singh - Branch Manager & Data Analyst Expert at DigiCoders Gorakhpur" 
+                                 title="Abhishek Singh - Branch Manager & Data Analyst Expert at DigiCoders Technologies"
                                  class="img-fluid w-100 object-fit-cover" 
                                  style="aspect-ratio: 5/4; filter: brightness(0.95); transition: transform 0.5s ease;">
                         </div>
@@ -432,7 +433,7 @@
                 <div class="swiper-wrapper">
                     <!-- Slide 1: Abhishek Singh -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Abhishek-Singh-digicoders-gorakhpur.jpeg') }}" alt="Abhishek Singh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Abhishek-Singh-digicoders-gorakhpur.jpeg') }}" alt="Abhishek Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Abhishek Singh - Branch Head & Data Analyst Expert" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Abhishek Singh</h4>
                             <div class="swiper-marquee-desc">Branch Head &amp; Data Analyst</div>
@@ -440,7 +441,7 @@
                     </div>
                     <!-- Slide 2: Muskan -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Muskan-digicoders-gorakhpur.jpeg') }}" alt="Muskan - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Muskan-digicoders-gorakhpur.jpeg') }}" alt="Muskan - IT Trainer and Developer at DigiCoders Gorakhpur" title="Muskan - HR Executive at DigiCoders Technologies" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Muskan</h4>
                             <div class="swiper-marquee-desc">Hr Executive</div>
@@ -448,7 +449,7 @@
                     </div>
                     <!-- Slide 3: Priyanshu Singh -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Priyanshu-Singh-digicoders-gorakhpur.jpeg') }}" alt="Priyanshu Singh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Priyanshu-Singh-digicoders-gorakhpur.jpeg') }}" alt="Priyanshu Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Priyanshu Singh - Trainer & Developer at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Priyanshu Singh</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -456,7 +457,7 @@
                     </div>
                     <!-- Slide 4: Sarvesh -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Sarvesh-digicoders-gorakhpur.jpeg') }}" alt="Sarvesh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Sarvesh-digicoders-gorakhpur.jpeg') }}" alt="Sarvesh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Sarvesh - Trainer & Developer at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Sarvesh</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -464,7 +465,7 @@
                     </div>
                     <!-- Slide 5: Zaid -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Zaid-digicoders-gorakhpur.jpeg') }}" alt="Zaid - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Zaid-digicoders-gorakhpur.jpeg') }}" alt="Zaid - IT Trainer and Developer at DigiCoders Gorakhpur" title="Zaid - Trainer & Developer at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Zaid</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -472,7 +473,7 @@
                     </div>
                     <!-- Slide 6: Abhishek Singh (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Abhishek-Singh-digicoders-gorakhpur.jpeg') }}" alt="Abhishek Singh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Abhishek-Singh-digicoders-gorakhpur.jpeg') }}" alt="Abhishek Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Abhishek Singh - Branch Head & Data Analyst" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Abhishek Singh</h4>
                             <div class="swiper-marquee-desc">Branch Head &amp; Data Analyst</div>
@@ -480,7 +481,7 @@
                     </div>
                     <!-- Slide 7: Muskan (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Muskan-digicoders-gorakhpur.jpeg') }}" alt="Muskan - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Muskan-digicoders-gorakhpur.jpeg') }}" alt="Muskan - IT Trainer and Developer at DigiCoders Gorakhpur" title="Muskan - HR Executive at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Muskan</h4>
                             <div class="swiper-marquee-desc">Hr Executive</div>
@@ -488,7 +489,7 @@
                     </div>
                     <!-- Slide 8: Priyanshu Singh (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Priyanshu-Singh-digicoders-gorakhpur.jpeg') }}" alt="Priyanshu Singh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Priyanshu-Singh-digicoders-gorakhpur.jpeg') }}" alt="Priyanshu Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Priyanshu Singh - Trainer & Developer" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Priyanshu Singh</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -496,7 +497,7 @@
                     </div>
                     <!-- Slide 9: Sarvesh (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Sarvesh-digicoders-gorakhpur.jpeg') }}" alt="Sarvesh - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Sarvesh-digicoders-gorakhpur.jpeg') }}" alt="Sarvesh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Sarvesh - Trainer & Developer" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Sarvesh</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -504,7 +505,7 @@
                     </div>
                     <!-- Slide 10: Zaid (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Zaid-digicoders-gorakhpur.jpeg') }}" alt="Zaid - IT Trainer and Developer at DigiCoders Gorakhpur" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Zaid-digicoders-gorakhpur.jpeg') }}" alt="Zaid - IT Trainer and Developer at DigiCoders Gorakhpur" title="Zaid - Trainer & Developer" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Zaid</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -1055,9 +1056,9 @@
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
                     <div class="comp-card comp-card-digicoders">
                         <div class="comp-logo-container">
-                            <img src="{{ asset('assets/images/logo.png') }}" alt="DigiCoders Technologies Logo"
+                            <img src="{{ asset('assets/images/logo.png') }}" alt="DigiCoders Technologies Logo" title="DigiCoders Technologies Pvt. Ltd."
                                 class="comp-logo-img logo-light">
-                            <img src="{{ asset('assets/images/logo-white.png') }}" alt="DigiCoders Technologies Logo"
+                            <img src="{{ asset('assets/images/logo-white.png') }}" alt="DigiCoders Technologies Logo" title="DigiCoders Technologies Pvt. Ltd."
                                 class="comp-logo-img logo-dark">
                             <h3 class="comp-logo-title">DigiCoders Technologies</h3>
                         </div>
@@ -1183,39 +1184,67 @@
         </div>
     </section>
 
-    <!-- 8. Live Projects -->
-    <section class="section-padding bg-secondary bg-opacity-10">
+    <!-- 8. Software Solutions & Live Projects -->
+    <section class="section-padding bg-secondary bg-opacity-10" id="software-solutions">
         <div class="container">
             <div class="text-center max-w-xl mx-auto mb-5" data-aos="fade-up">
-                <span class="text-brand-blue fw-bold text-sm uppercase">Practical Exposure</span>
-                <h2 class="fw-bold h1 mt-2" style="font-family: 'Montserrat', sans-serif;">Live Projects Built by Students
+                <span class="text-brand-blue fw-bold text-sm uppercase">Enterprise Software Solutions</span>
+                <h2 class="fw-bold h1 mt-2" style="font-family: 'Montserrat', sans-serif;">Software Solutions & Live Projects
                 </h2>
-                <p class="text-secondary">Students work in groups to design, build, and deploy production-grade software
-                    applications.</p>
+                <p class="text-secondary">Custom software development services and production-grade applications built by DigiCoders Technologies.</p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
+            <div class="row g-4 justify-content-center">
+                <!-- 1. Hospital Management Software -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="glass-card p-4 h-100">
-                        <h6 class="text-brand-blue fw-bold uppercase mb-2">Web Application</h6>
-                        <h5 class="fw-bold mb-3">Multi-vendor Ecommerce</h5>
-                        <p class="text-secondary mb-0">Build shopping portals with cart systems, discount models, admin
-                            sheets, and payment gateway callbacks.</p>
+                        <h6 class="text-brand-blue fw-bold uppercase mb-2">Healthcare Solution</h6>
+                        <h5 class="fw-bold mb-3">Hospital Management software in lucknow</h5>
+                        <p class="text-secondary mb-0">Comprehensive hospital ERP software featuring OPD/IPD registration, patient EHR management, pharmacy billing, pathology lab reports, doctor appointment scheduling, and GST invoice generation.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <!-- 2. HRMS Software -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="glass-card p-4 h-100">
-                        <h6 class="text-brand-blue fw-bold uppercase mb-2">Enterprise Software</h6>
-                        <h5 class="fw-bold mb-3">School ERP Portal</h5>
-                        <p class="text-secondary mb-0">Management logs, online fee collections, grade reporting databases,
-                            and teacher-parent SMS triggers.</p>
+                        <h6 class="text-brand-blue fw-bold uppercase mb-2">Enterprise HR</h6>
+                        <h5 class="fw-bold mb-3">HRMS software in lucknow</h5>
+                        <p class="text-secondary mb-0">Custom Human Resource Management System with biometric attendance sync, automated monthly payroll, leave tracking, employee self-service portal, and tax deduction reports.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+
+                <!-- 3. Mobile App Dev -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="glass-card p-4 h-100">
-                        <h6 class="text-brand-blue fw-bold uppercase mb-2">App Development</h6>
-                        <h5 class="fw-bold mb-3">Real-time Chat App</h5>
-                        <p class="text-secondary mb-0">Built using Flutter and Firebase, featuring instantaneous web-socket
-                            messages, media shares, and profile locks.</p>
+                        <h6 class="text-brand-blue fw-bold uppercase mb-2">Mobile Engineering</h6>
+                        <h5 class="fw-bold mb-3">Mobile app dev in lucknow</h5>
+                        <p class="text-secondary mb-0">High-performance native Android, iOS, and Flutter cross-platform mobile application development with real-time push notifications, payment gateway integration, and Play Store publishing.</p>
+                    </div>
+                </div>
+
+                <!-- 4. MLM Software -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="glass-card p-4 h-100">
+                        <h6 class="text-brand-blue fw-bold uppercase mb-2">Network Marketing</h6>
+                        <h5 class="fw-bold mb-3">MLM software in lucknow</h5>
+                        <p class="text-secondary mb-0">Scalable Multi-Level Marketing software supporting Binary, Matrix, and Generation compensation plans with live payout calculations, genealogy trees, and wallet integrations.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Food Delivery App & Restaurant Management -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="glass-card p-4 h-100">
+                        <h6 class="text-brand-blue fw-bold uppercase mb-2">FoodTech & POS</h6>
+                        <h5 class="fw-bold mb-3">Food delivery app & restaurant management software in lucknow</h5>
+                        <p class="text-secondary mb-0">Integrated restaurant POS system, kitchen order ticket (KOT) management, online customer ordering web portal, and real-time food delivery app with live GPS order tracking.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Multi-vendor Ecommerce -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="glass-card p-4 h-100">
+                        <h6 class="text-brand-blue fw-bold uppercase mb-2">E-Commerce Portal</h6>
+                        <h5 class="fw-bold mb-3">Multi-vendor Ecommerce Platform</h5>
+                        <p class="text-secondary mb-0">Build shopping portals with cart systems, vendor payout models, admin sheets, inventory management, and automated payment gateway callbacks.</p>
                     </div>
                 </div>
             </div>
@@ -1300,7 +1329,7 @@
                         <div class="position-relative overflow-hidden"
                             style="height: 180px; background: rgba(0, 0, 0, 0.05);">
                             <img src="{{ asset('assets/gallery/digicoders-gorakhpur-classroom-cs-it-training.jpeg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img" alt="Interactive Coding Classroom Session">
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Interactive Coding Classroom Session" title="Interactive Coding Classroom Session - DigiCoders Gorakhpur">
                         </div>
                         <div class="p-3">
                             <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">TRAINING</small>
@@ -1317,7 +1346,7 @@
                             style="height: 180px; background: rgba(0, 0, 0, 0.05);">
                             <img src="{{ asset('assets/gallery/digicoders-gorakhpur-industrial-training-center.jpeg') }}"
                                 class="w-100 h-100 object-fit-cover gallery-img"
-                                alt="Students Working on Capstone Projects">
+                                alt="Students Working on Capstone Projects" title="Students Working on Capstone Projects - DigiCoders Gorakhpur">
                         </div>
                         <div class="p-3">
                             <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">TRAINING</small>
@@ -1333,7 +1362,7 @@
                         <div class="position-relative overflow-hidden"
                             style="height: 180px; background: rgba(0, 0, 0, 0.05);">
                             <img src="{{ asset('assets/gallery/best-it-training-institute-gorakhpur-digicoders.jpeg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img" alt="One-on-One Mentorship and Debugging">
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="One-on-One Mentorship and Debugging" title="One-on-One Mentorship and Debugging - DigiCoders IT Training">
                         </div>
                         <div class="p-3">
                             <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">TRAINING</small>
@@ -1349,7 +1378,7 @@
                         <div class="position-relative overflow-hidden"
                             style="height: 180px; background: rgba(0, 0, 0, 0.05);">
                             <img src="{{ asset('assets/gallery/digicoders-gorakhpur-placement.jpeg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img" alt="Campus Hiring Drive & Placements">
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Campus Hiring Drive & Placements" title="Campus Hiring Drive & Placements - DigiCoders Technologies">
                         </div>
                         <div class="p-3">
                             <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">PLACEMENT</small>
@@ -1366,7 +1395,7 @@
                             style="height: 180px; background: rgba(0, 0, 0, 0.05);">
                             <img src="{{ asset('assets/gallery/digicoders-gorakhpur-hr-department-office.jpeg') }}"
                                 class="w-100 h-100 object-fit-cover gallery-img"
-                                alt="Collaborative Brainstorming in Meeting Room">
+                                alt="Collaborative Brainstorming in Meeting Room" title="Collaborative Brainstorming in Meeting Room - DigiCoders Office">
                         </div>
                         <div class="p-3">
                             <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">CAMPUS</small>
@@ -1383,7 +1412,7 @@
                         <div class="position-relative overflow-hidden"
                             style="height: 180px; background: rgba(0, 0, 0, 0.05);">
                             <img src="{{ asset('assets/gallery/digicoders-gorakhpur-office-front-view.jpeg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img" alt="Modern IT Labs & Startup Workspace">
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Modern IT Labs & Startup Workspace" title="Modern IT Labs & Startup Workspace - DigiCoders Gorakhpur">
                         </div>
                         <div class="p-3">
                             <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">CAMPUS</small>
@@ -1401,7 +1430,7 @@
                         <div class="position-relative overflow-hidden"
                             style="height: 180px; background: rgba(0, 0, 0, 0.05);">
                             <img src="{{ asset('assets/gallery/digicoders-team-at-buddha-institute-of-technology.jpg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Team at Buddha Institute of Technology">
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Team at Buddha Institute of Technology" title="DigiCoders Team at Buddha Institute of Technology">
                         </div>
                         <div class="p-3">
                             <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">CAMPUS</small>
@@ -1417,7 +1446,7 @@
                         <div class="position-relative overflow-hidden"
                             style="height: 180px; background: rgba(0, 0, 0, 0.05);">
                             <img src="{{ asset('assets/gallery/digicoders-trainers-buddha-campus-gorakhpur.jpg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Trainers at Buddha Campus Gorakhpur">
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Trainers at Buddha Campus Gorakhpur" title="DigiCoders Trainers at Buddha Campus Gorakhpur">
                         </div>
                         <div class="p-3">
                             <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">CAMPUS</small>

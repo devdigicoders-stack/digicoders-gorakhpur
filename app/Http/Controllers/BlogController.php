@@ -116,7 +116,10 @@ class BlogController extends Controller
         $imgAlt = ! empty($blog['img_alt']) ? strip_tags($blog['img_alt']) : $cleanTitle;
         $authorName = ! empty($blog['author_name']) ? strip_tags($blog['author_name']) : 'DigiCoders Team';
         $authorDesignation = ! empty($blog['author_designation']) ? strip_tags($blog['author_designation']) : 'Tech Expert';
-        $canonicalUrl = ! empty($blog['canonical_url']) ? trim($blog['canonical_url']) : '';
+        $canonicalUrl = ! empty($blog['canonical_url']) ? trim($blog['canonical_url']) : route('blogs.show', $slug);
+        if (str_starts_with($canonicalUrl, 'http://')) {
+            $canonicalUrl = 'https://'.substr($canonicalUrl, 7);
+        }
         $formattedDate = isset($blog['date']) ? date('F d, Y', strtotime($blog['date'])) : '';
         $formattedTime = ! empty($blog['time']) ? date('h:i A', strtotime($blog['time'])) : '';
 

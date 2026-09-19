@@ -24,14 +24,14 @@
     <!-- Gorakhpur Best SEO Optimized Meta Tags -->
 
     <title>
-        {{ isset($seo) && !empty($seo->meta_title) ? $seo->meta_title : 'Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders Technologies Pvt. Ltd.' }}
+        {{ strip_tags(isset($seo) && !empty($seo->meta_title) ? $seo->meta_title : 'Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders Technologies Pvt. Ltd.') }}
     </title>
 
     <meta name="title"
-        content="{{ isset($seo) && !empty($seo->meta_title) ? $seo->meta_title : 'Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders Technologies Pvt. Ltd.' }}">
+        content="{{ strip_tags(isset($seo) && !empty($seo->meta_title) ? $seo->meta_title : 'Best Summer Training in Gorakhpur | Industrial Training, Internship & Software Development Company | DigiCoders Technologies Pvt. Ltd.') }}">
 
     <meta name="description"
-        content="{{ isset($seo) && !empty($seo->meta_description) ? $seo->meta_description : 'DigiCoders Technologies Pvt. Ltd. is the No.1 IT Training Institute & Software Development Company in Gorakhpur offering Summer Training, Winter Training, Industrial Training, Internship, Apprenticeship, Live Projects and Professional Courses in Python, Java, PHP, Laravel, MERN Stack, React JS, Android, Data Science, AI, Machine Learning, Web Development, Digital Marketing and Full Stack Development with Certificate, Placement Assistance and Real-Time Projects.' }}">
+        content="{{ strip_tags(isset($seo) && !empty($seo->meta_description) ? $seo->meta_description : 'DigiCoders Technologies Pvt. Ltd. is the No.1 IT Training Institute & Software Development Company in Gorakhpur offering Summer Training, Winter Training, Industrial Training, Internship, Apprenticeship, Live Projects and Professional Courses in Python, Java, PHP, Laravel, MERN Stack, React JS, Android, Data Science, AI, Machine Learning, Web Development, Digital Marketing and Full Stack Development with Certificate, Placement Assistance and Real-Time Projects.') }}">
 
     <meta name="keywords" content="{{ isset($seo) && !empty($seo->meta_keywords) ? $seo->meta_keywords : 'best summer training in gorakhpur, best industrial training in gorakhpur, best internship in gorakhpur, best software development company in gorakhpur, best IT company in gorakhpur, best computer institute in gorakhpur, best coding institute in gorakhpur, best programming institute in gorakhpur, python training in gorakhpur, python internship gorakhpur, java training in gorakhpur, java internship gorakhpur, php training in gorakhpur, php laravel training gorakhpur, laravel internship gorakhpur, mern stack training gorakhpur, full stack development course gorakhpur, react js training gorakhpur, node js training gorakhpur, android training gorakhpur, web development course gorakhpur, web designing course gorakhpur, digital marketing training gorakhpur, data science training gorakhpur, machine learning course gorakhpur, artificial intelligence training gorakhpur, software internship gorakhpur, industrial internship gorakhpur, apprenticeship training gorakhpur, summer internship for btech students, summer training for bca students, summer training for mca students, summer training for diploma cs students, industrial training for cs students, live project training gorakhpur, 6 weeks summer training, 6 months industrial training, best internship company near gida gorakhpur, best training institute near gida, internship with certificate gorakhpur, placement training gorakhpur, software company internship gorakhpur, best IT internship in UP, best coding classes in gorakhpur, DigiCoders Technologies, DigiCoders Technologies Pvt Ltd, DigiCoders Gorakhpur, IT Training Institute GIDA Gorakhpur, software company GIDA Gorakhpur' }}">
 
@@ -44,7 +44,13 @@
     <meta name="geo.position" content="26.708573;83.376822">
     <meta name="ICBM" content="26.708573,83.376822">
 
-    <link rel="canonical" href="{{ request()->url() }}">
+    @php
+        $resolvedCanonical = !empty($canonicalUrl) ? $canonicalUrl : (!empty($seo->canonical_url) ? $seo->canonical_url : request()->url());
+        if (str_starts_with($resolvedCanonical, 'http://')) {
+            $resolvedCanonical = 'https://' . substr($resolvedCanonical, 7);
+        }
+    @endphp
+    <link rel="canonical" href="{{ $resolvedCanonical }}">
 
     <!-- Open Graph -->
 
@@ -196,7 +202,7 @@
     <div id="preloader">
         <div class="loader-content">
             <div class="loader-logo-wrap">
-                <img src="{{ asset('assets/images/logo-square.png') }}" alt="DigiCoders Logo" class="loader-logo">
+                <img src="{{ asset('assets/images/logo-square.png') }}" alt="DigiCoders Technologies Logo" title="DigiCoders Technologies Pvt. Ltd. Gorakhpur" class="loader-logo">
                 <div class="loader-ring"></div>
                 <div class="loader-ring-outer"></div>
             </div>
@@ -260,11 +266,11 @@
     <div class="topbar-strip d-none d-lg-flex align-items-center">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center gap-4">
-                <a href="tel:9801017529" class="topbar-link">
+                <a href="tel:9801017529" class="topbar-link" title="Call DigiCoders Technologies">
                     <i class="bi bi-telephone-fill"></i>
                     +91-9801017529
                 </a>
-                <a href="mailto:digicoderstech@gmail.com" class="topbar-link">
+                <a href="mailto:digicoderstech@gmail.com" class="topbar-link" title="Email DigiCoders Technologies">
                     <i class="bi bi-envelope-fill"></i>
                     digicoderstech@gmail.com
                 </a>
@@ -281,23 +287,23 @@
                 <div class="topbar-divider"></div>
                 <div class="d-flex align-items-center gap-2">
                     <a href="https://www.facebook.com/DigiCodersTech/" target="_blank" class="topbar-social-icon"
-                        aria-label="Facebook">
+                        aria-label="Facebook" title="Follow DigiCoders Technologies on Facebook">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/digacoderstech" target="_blank" class="topbar-social-icon"
-                        aria-label="Instagram">
+                    <a href="https://www.instagram.com/digicoderstech" target="_blank" class="topbar-social-icon"
+                        aria-label="Instagram" title="Follow DigiCoders Technologies on Instagram">
                         <i class="bi bi-instagram"></i>
                     </a>
                     <a href="https://www.linkedin.com/company/digicoders/" target="_blank" class="topbar-social-icon"
-                        aria-label="LinkedIn">
+                        aria-label="LinkedIn" title="Connect with DigiCoders Technologies on LinkedIn">
                         <i class="bi bi-linkedin"></i>
                     </a>
                     <a href="https://www.youtube.com/@digicoders" target="_blank" class="topbar-social-icon"
-                        aria-label="YouTube">
+                        aria-label="YouTube" title="Subscribe to DigiCoders Technologies YouTube Channel">
                         <i class="bi bi-youtube"></i>
                     </a>
                     <a href="https://www.whatsapp.com/channel/0029VaDTIxW5EjxzOyubYT3l" target="_blank"
-                        class="topbar-social-icon topbar-social-whatsapp" aria-label="WhatsApp">
+                        class="topbar-social-icon topbar-social-whatsapp" aria-label="WhatsApp" title="Join DigiCoders Technologies WhatsApp Channel">
                         <i class="bi bi-whatsapp"></i>
                     </a>
                     <!-- Theme Toggle in Topbar -->
@@ -316,9 +322,9 @@
 
             <!-- Logo -->
             <a class="navbar-brand-link d-flex align-items-center" href="{{ route('home') }}">
-                <img src="{{ asset('assets/images/logo.png') }}" alt="DigiCoders Technologies"
+                <img src="{{ asset('assets/images/logo.png') }}" alt="DigiCoders Technologies Logo" title="DigiCoders Technologies Pvt. Ltd. - Best Software & Training Institute Gorakhpur"
                     class="nav-logo logo-light">
-                <img src="{{ asset('assets/images/logo-white.png') }}" alt="DigiCoders Technologies"
+                <img src="{{ asset('assets/images/logo-white.png') }}" alt="DigiCoders Technologies Logo" title="DigiCoders Technologies Pvt. Ltd. - Best Software & Training Institute Gorakhpur"
                     class="nav-logo logo-dark">
             </a>
 
@@ -501,14 +507,14 @@
                     <!-- Brand Column -->
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-brand-col">
-                            <img src="{{ asset('assets/images/logo-white.png') }}" alt="DigiCoders Technologies Logo"
+                            <img src="{{ asset('assets/images/logo-white.png') }}" alt="DigiCoders Technologies Logo" title="DigiCoders Technologies Pvt. Ltd."
                                 class="footer-logo" loading="lazy">
                             <p class="footer-brand-desc">Join the best Summer Training in Gorakhpur and gain practical experience in coding, web development, systems architecture, and generative AI through live projects and industry-focused learning.</p>
                             
                             <!-- Location Information -->
                             <div class="d-flex align-items-start gap-2 mt-4 text-secondary" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7) !important; line-height: 1.5;">
                                 <i class="bi bi-geo-alt-fill text-primary flex-shrink-0" style="margin-top: 3px; font-size: 1rem;"></i>
-                                <a href="https://maps.app.goo.gl/jbbN4Rq6fg9LEDBu8" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-reset hover-primary d-inline-block">
+                                <a href="https://maps.app.goo.gl/jbbN4Rq6fg9LEDBu8" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-reset hover-primary d-inline-block" title="Find DigiCoders Technologies on Google Maps">
                                     Inside Main Building, Buddha Institute of Technology, CL-1, Sector-7, GIDA, Gorakhpur, UP - 273209
                                 </a>
                             </div>
@@ -517,9 +523,9 @@
                             <div class="d-flex align-items-center gap-2 mt-2 text-secondary" style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7) !important;">
                                 <i class="bi bi-telephone-fill text-primary flex-shrink-0" style="font-size: 0.9rem;"></i>
                                 <div class="d-flex align-items-center gap-2 flex-wrap">
-                                    <a href="tel:9198484820" class="text-decoration-none text-reset hover-primary fw-medium" style="color: rgba(255, 255, 255, 0.85) !important;">+91-9198484820</a>
+                                    <a href="tel:9198484820" class="text-decoration-none text-reset hover-primary fw-medium" style="color: rgba(255, 255, 255, 0.85) !important;" title="Call +91-9198484820">+91-9198484820</a>
                                     <span class="opacity-50">•</span>
-                                    <a href="tel:6394296293" class="text-decoration-none text-reset hover-primary fw-medium" style="color: rgba(255, 255, 255, 0.85) !important;">+91-6394296293</a>
+                                    <a href="tel:6394296293" class="text-decoration-none text-reset hover-primary fw-medium" style="color: rgba(255, 255, 255, 0.85) !important;" title="Call +91-6394296293">+91-6394296293</a>
                                 </div>
                             </div>
                            
@@ -573,8 +579,8 @@
                                 </div>
                                 <div>
                                     <span class="footer-contact-label">Call Us</span>
-                                    <a href="tel:9198484820" class="footer-contact-value d-block">+91-9198484820</a>
-                                    <a href="tel:6394296293" class="footer-contact-value d-block">+91-6394296293</a>
+                                    <a href="tel:9198484820" class="footer-contact-value d-block" title="Call DigiCoders">+91-9198484820</a>
+                                    <a href="tel:6394296293" class="footer-contact-value d-block" title="Call DigiCoders">+91-6394296293</a>
                                 </div>
                             </div>
                             <div class="footer-contact-item">
@@ -584,7 +590,7 @@
                                 <div>
                                     <span class="footer-contact-label">Email</span>
                                     <a href="mailto:digicoderstech@gmail.com"
-                                        class="footer-contact-value">digicoderstech@gmail.com</a>
+                                        class="footer-contact-value" title="Email DigiCoders Technologies">digicoderstech@gmail.com</a>
                                 </div>
                             </div>
                             <div class="footer-contact-item">
@@ -601,23 +607,23 @@
                         <!-- Relocated Social Icons -->
                         <div class="footer-social-row">
                             <a href="https://www.facebook.com/DigiCodersTech/" target="_blank" aria-label="Facebook"
-                                class="footer-social-icon">
+                                class="footer-social-icon" title="Follow DigiCoders Technologies on Facebook">
                                 <i class="bi bi-facebook"></i>
                             </a>
-                            <a href="https://www.instagram.com/digacoderstech" target="_blank" aria-label="Instagram"
-                                class="footer-social-icon">
+                            <a href="https://www.instagram.com/digicoderstech" target="_blank" aria-label="Instagram"
+                                class="footer-social-icon" title="Follow DigiCoders Technologies on Instagram">
                                 <i class="bi bi-instagram"></i>
                             </a>
                             <a href="https://www.linkedin.com/company/digicoders/" target="_blank" aria-label="LinkedIn"
-                                class="footer-social-icon">
+                                class="footer-social-icon" title="Connect with DigiCoders Technologies on LinkedIn">
                                 <i class="bi bi-linkedin"></i>
                             </a>
                             <a href="https://www.youtube.com/@digicoders" target="_blank" aria-label="YouTube"
-                                class="footer-social-icon">
+                                class="footer-social-icon" title="Subscribe to DigiCoders Technologies YouTube Channel">
                                 <i class="bi bi-youtube"></i>
                             </a>
                             <a href="https://www.whatsapp.com/channel/0029VaDTIxW5EjxzOyubYT3l" target="_blank" aria-label="WhatsApp"
-                                class="footer-social-icon">
+                                class="footer-social-icon" title="Join DigiCoders Technologies WhatsApp Channel">
                                 <i class="bi bi-whatsapp"></i>
                             </a>
                         </div>
