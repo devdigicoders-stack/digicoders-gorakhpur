@@ -348,10 +348,14 @@
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <div class="about-image-wrapper">
-                        <div class="about-img-container">
-                            <img src="{{ asset('assets/images/hero-office.jpg') }}"
-                                class="about-img" alt="DigiCoders IT Training Classroom" title="DigiCoders Technologies IT Training Classroom & Software Development Office">
+                    <div class="about-image-wrapper d-flex justify-content-center align-items-center">
+                        <div class="about-img-container glass-card p-2 border shadow-lg position-relative overflow-hidden"
+                            style="border-radius: 20px !important; max-width: 500px; width: 100%; aspect-ratio: 1 / 1;">
+                            <img src="{{ asset('assets/images/digicoders-co-founders.jpg') }}"
+                                class="about-img img-fluid w-100 h-100"
+                                style="object-fit: cover; border-radius: 14px;"
+                                alt="DigiCoders Co-Founders"
+                                title="DigiCoders Co-Founders - Vision, Technology & Growth">
                         </div>
                     </div>
                 </div>
@@ -433,7 +437,7 @@
                 <div class="swiper-wrapper">
                     <!-- Slide 1: Abhishek Singh -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Abhishek-Singh-digicoders-gorakhpur.jpeg') }}" alt="Abhishek Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Abhishek Singh - Branch Head & Data Analyst Expert" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Abhishek-Singh-digicoders-gorakhpur.jpg') }}" alt="Abhishek Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Abhishek Singh - Branch Head & Data Analyst Expert" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Abhishek Singh</h4>
                             <div class="swiper-marquee-desc">Branch Head &amp; Data Analyst</div>
@@ -441,7 +445,7 @@
                     </div>
                     <!-- Slide 2: Muskan -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Muskan-digicoders-gorakhpur.jpeg') }}" alt="Muskan - IT Trainer and Developer at DigiCoders Gorakhpur" title="Muskan - HR Executive at DigiCoders Technologies" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Muskan-digicoders-gorakhpur.jpg') }}" alt="Muskan - IT Trainer and Developer at DigiCoders Gorakhpur" title="Muskan - HR Executive at DigiCoders Technologies" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Muskan</h4>
                             <div class="swiper-marquee-desc">Hr Executive</div>
@@ -449,7 +453,7 @@
                     </div>
                     <!-- Slide 3: Priyanshu Singh -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Priyanshu-Singh-digicoders-gorakhpur.jpeg') }}" alt="Priyanshu Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Priyanshu Singh - Trainer & Developer at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Priyanshu-Singh-digicoders-gorakhpur.jpg') }}" alt="Priyanshu Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Priyanshu Singh - Trainer & Developer at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Priyanshu Singh</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -457,7 +461,7 @@
                     </div>
                     <!-- Slide 4: Sarvesh -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Sarvesh-digicoders-gorakhpur.jpeg') }}" alt="Sarvesh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Sarvesh - Trainer & Developer at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Sarvesh-digicoders-gorakhpur.jpg') }}" alt="Sarvesh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Sarvesh - Trainer & Developer at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Sarvesh</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -465,7 +469,7 @@
                     </div>
                     <!-- Slide 5: Zaid -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Zaid-digicoders-gorakhpur.jpeg') }}" alt="Zaid - IT Trainer and Developer at DigiCoders Gorakhpur" title="Zaid - Trainer & Developer at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Zaid-digicoders-gorakhpur.jpg') }}" alt="Zaid - IT Trainer and Developer at DigiCoders Gorakhpur" title="Zaid - Trainer & Developer at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Zaid</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -473,7 +477,7 @@
                     </div>
                     <!-- Slide 6: Abhishek Singh (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Abhishek-Singh-digicoders-gorakhpur.jpeg') }}" alt="Abhishek Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Abhishek Singh - Branch Head & Data Analyst" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Abhishek-Singh-digicoders-gorakhpur.jpg') }}" alt="Abhishek Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Abhishek Singh - Branch Head & Data Analyst" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Abhishek Singh</h4>
                             <div class="swiper-marquee-desc">Branch Head &amp; Data Analyst</div>
@@ -481,7 +485,7 @@
                     </div>
                     <!-- Slide 7: Muskan (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Muskan-digicoders-gorakhpur.jpeg') }}" alt="Muskan - IT Trainer and Developer at DigiCoders Gorakhpur" title="Muskan - HR Executive at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Muskan-digicoders-gorakhpur.jpg') }}" alt="Muskan - IT Trainer and Developer at DigiCoders Gorakhpur" title="Muskan - HR Executive at DigiCoders" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Muskan</h4>
                             <div class="swiper-marquee-desc">Hr Executive</div>
@@ -489,7 +493,7 @@
                     </div>
                     <!-- Slide 8: Priyanshu Singh (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Priyanshu-Singh-digicoders-gorakhpur.jpeg') }}" alt="Priyanshu Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Priyanshu Singh - Trainer & Developer" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Priyanshu-Singh-digicoders-gorakhpur.jpg') }}" alt="Priyanshu Singh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Priyanshu Singh - Trainer & Developer" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Priyanshu Singh</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -497,7 +501,7 @@
                     </div>
                     <!-- Slide 9: Sarvesh (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Sarvesh-digicoders-gorakhpur.jpeg') }}" alt="Sarvesh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Sarvesh - Trainer & Developer" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Sarvesh-digicoders-gorakhpur.jpg') }}" alt="Sarvesh - IT Trainer and Developer at DigiCoders Gorakhpur" title="Sarvesh - Trainer & Developer" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Sarvesh</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -505,7 +509,7 @@
                     </div>
                     <!-- Slide 10: Zaid (Repeat for loop) -->
                     <div class="swiper-slide swiper-marquee-slide">
-                        <img src="{{ asset('assets/images/team/Zaid-digicoders-gorakhpur.jpeg') }}" alt="Zaid - IT Trainer and Developer at DigiCoders Gorakhpur" title="Zaid - Trainer & Developer" style="aspect-ratio: 5/4; object-fit: cover;">
+                        <img src="{{ asset('assets/images/team/Zaid-digicoders-gorakhpur.jpg') }}" alt="Zaid - IT Trainer and Developer at DigiCoders Gorakhpur" title="Zaid - Trainer & Developer" style="aspect-ratio: 5/4; object-fit: cover;">
                         <div class="swiper-marquee-overlay">
                             <h4 class="swiper-marquee-title">Zaid</h4>
                             <div class="swiper-marquee-desc">Trainer &amp; Developer</div>
@@ -1319,139 +1323,210 @@
                 <button class="btn btn-sm btn-outline-brand-blue rounded-pill px-3 py-2 filter-btn"
                     data-filter="campus">Campus
                     Life</button>
+                <button class="btn btn-sm btn-outline-brand-blue rounded-pill px-3 py-2 filter-btn"
+                    data-filter="workshop">Workshops</button>
             </div>
 
             <div class="row g-3" id="gallery-grid">
                 <!-- Static Gallery Items -->
                 <!-- Item 1: Class Training -->
                 <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="training" data-aos="zoom-in">
-                    <div class="glass-card overflow-hidden" style="border-radius: 4px;">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
                         <div class="position-relative overflow-hidden"
-                            style="height: 180px; background: rgba(0, 0, 0, 0.05);">
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
                             <img src="{{ asset('assets/gallery/digicoders-gorakhpur-classroom-cs-it-training.jpeg') }}"
                                 class="w-100 h-100 object-fit-cover gallery-img" alt="Interactive Coding Classroom Session" title="Interactive Coding Classroom Session - DigiCoders Gorakhpur">
-                        </div>
-                        <div class="p-3">
-                            <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">TRAINING</small>
-                            <span class="fw-semibold text-sm d-block text-truncate"
-                                title="Interactive Coding Classroom Session">Interactive Coding Classroom Session</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 2: Class Training -->
-                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="training" data-aos="zoom-in">
-                    <div class="glass-card overflow-hidden" style="border-radius: 4px;">
-                        <div class="position-relative overflow-hidden"
-                            style="height: 180px; background: rgba(0, 0, 0, 0.05);">
-                            <img src="{{ asset('assets/gallery/digicoders-gorakhpur-industrial-training-center.jpeg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img"
-                                alt="Students Working on Capstone Projects" title="Students Working on Capstone Projects - DigiCoders Gorakhpur">
-                        </div>
-                        <div class="p-3">
-                            <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">TRAINING</small>
-                            <span class="fw-semibold text-sm d-block text-truncate"
-                                title="Students Working on Capstone Projects">Students Working on Capstone Projects</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 3: Class Training -->
-                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="training" data-aos="zoom-in">
-                    <div class="glass-card overflow-hidden" style="border-radius: 4px;">
-                        <div class="position-relative overflow-hidden"
-                            style="height: 180px; background: rgba(0, 0, 0, 0.05);">
-                            <img src="{{ asset('assets/gallery/best-it-training-institute-gorakhpur-digicoders.jpeg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img" alt="One-on-One Mentorship and Debugging" title="One-on-One Mentorship and Debugging - DigiCoders IT Training">
-                        </div>
-                        <div class="p-3">
-                            <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">TRAINING</small>
-                            <span class="fw-semibold text-sm d-block text-truncate"
-                                title="One-on-One Mentorship and Debugging">One-on-One Mentorship and Debugging</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 4: Placements -->
-                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="placement" data-aos="zoom-in">
-                    <div class="glass-card overflow-hidden" style="border-radius: 4px;">
-                        <div class="position-relative overflow-hidden"
-                            style="height: 180px; background: rgba(0, 0, 0, 0.05);">
-                            <img src="{{ asset('assets/gallery/digicoders-gorakhpur-placement.jpeg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img" alt="Campus Hiring Drive & Placements" title="Campus Hiring Drive & Placements - DigiCoders Technologies">
-                        </div>
-                        <div class="p-3">
-                            <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">PLACEMENT</small>
-                            <span class="fw-semibold text-sm d-block text-truncate"
-                                title="Campus Hiring Drive & Placements">Campus Hiring Drive & Placements</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 5: Campus Life -->
-                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
-                    <div class="glass-card overflow-hidden" style="border-radius: 4px;">
-                        <div class="position-relative overflow-hidden"
-                            style="height: 180px; background: rgba(0, 0, 0, 0.05);">
-                            <img src="{{ asset('assets/gallery/digicoders-gorakhpur-hr-department-office.jpeg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img"
-                                alt="Collaborative Brainstorming in Meeting Room" title="Collaborative Brainstorming in Meeting Room - DigiCoders Office">
-                        </div>
-                        <div class="p-3">
-                            <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">CAMPUS</small>
-                            <span class="fw-semibold text-sm d-block text-truncate"
-                                title="Collaborative Brainstorming in Meeting Room">Collaborative Brainstorming in Meeting
-                                Room</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 6: Campus Life -->
-                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
-                    <div class="glass-card overflow-hidden" style="border-radius: 4px;">
-                        <div class="position-relative overflow-hidden"
-                            style="height: 180px; background: rgba(0, 0, 0, 0.05);">
-                            <img src="{{ asset('assets/gallery/digicoders-gorakhpur-office-front-view.jpeg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img" alt="Modern IT Labs & Startup Workspace" title="Modern IT Labs & Startup Workspace - DigiCoders Gorakhpur">
-                        </div>
-                        <div class="p-3">
-                            <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">CAMPUS</small>
-                            <span class="fw-semibold text-sm d-block text-truncate"
-                                title="Modern IT Labs & Startup Workspace">Modern IT Labs & Startup Workspace</span>
                         </div>
                     </div>
                 </div>
 
                
 
-                <!-- Item 7: Team at Buddha Institute -->
-                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
-                    <div class="glass-card overflow-hidden" style="border-radius: 4px;">
+
+                <!-- Item 4B: Placement Drive Interview -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="placement" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
                         <div class="position-relative overflow-hidden"
-                            style="height: 180px; background: rgba(0, 0, 0, 0.05);">
-                            <img src="{{ asset('assets/gallery/digicoders-team-at-buddha-institute-of-technology.jpg') }}"
-                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Team at Buddha Institute of Technology" title="DigiCoders Team at Buddha Institute of Technology">
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/digicoders-placement-drive-hiring-interview.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Placement Drive & Hiring Interview Session" title="Placement Drive & Hiring Interview Session - DigiCoders">
                         </div>
-                        <div class="p-3">
-                            <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">CAMPUS</small>
-                            <span class="fw-semibold text-sm d-block text-truncate"
-                                title="DigiCoders Team at Buddha Institute of Technology">Team at Buddha Institute</span>
+                    </div>
+                </div>
+
+                <!-- Item 4C: Placement Web Dev Team Interview -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="placement" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/digicoders-placement-web-dev-interview.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Placement Interview Session Web Dev Team" title="Placement Interview Session Web Dev Team">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4D: Placement App Dev Round Table -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="placement" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/digicoders-placement-app-dev-round-table.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Placement Interview Round Table Discussion" title="Placement Interview Round Table Discussion">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4E: Placement Technical Panel Interview -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="placement" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/digicoders-placement-technical-panel-interview.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Technical Panel Interview Session" title="Technical Panel Interview Session">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4F: Placement One-on-One Interview -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="placement" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/digicoders-placement-one-on-one-interview.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="One-on-One Technical Interview Evaluation" title="One-on-One Technical Interview Evaluation">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Campus Life -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/digicoders-gorakhpur-hr-department-office.jpeg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img"
+                                alt="Collaborative Brainstorming in Meeting Room" title="Collaborative Brainstorming in Meeting Room - DigiCoders Office">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Campus Life -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/digicoders-gorakhpur-office-front-view.jpeg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Modern IT Labs & Startup Workspace" title="Modern IT Labs & Startup Workspace - DigiCoders Gorakhpur">
                         </div>
                     </div>
                 </div>
 
                 <!-- Item 8: Trainers at Buddha Campus -->
                 <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
-                    <div class="glass-card overflow-hidden" style="border-radius: 4px;">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
                         <div class="position-relative overflow-hidden"
-                            style="height: 180px; background: rgba(0, 0, 0, 0.05);">
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
                             <img src="{{ asset('assets/gallery/digicoders-trainers-buddha-campus-gorakhpur.jpg') }}"
                                 class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Trainers at Buddha Campus Gorakhpur" title="DigiCoders Trainers at Buddha Campus Gorakhpur">
                         </div>
-                        <div class="p-3">
-                            <small class="text-brand-blue uppercase fw-semibold d-block text-xs mb-1">CAMPUS</small>
-                            <span class="fw-semibold text-sm d-block text-truncate"
-                                title="DigiCoders Trainers at Buddha Campus Gorakhpur">Trainers at Buddha Campus</span>
+                    </div>
+                </div>
+
+                <!-- Item 9: Buddha Campus Gate Group Photo -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/IMG_20260621_145013355_HDR.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Team & Students at Buddha Institute Gate" title="DigiCoders Team & Students at Buddha Institute Gate">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 10: Campus Training Batch Photo -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/IMG_20260621_144441237_HDR.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Campus Training Batch Photo" title="DigiCoders Campus Training Batch Photo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 11: Campus Activity & Mentorship Group -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="campus" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/IMG_20260621_144534502_HDR.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Trainers & Students Campus Activity" title="DigiCoders Trainers & Students Campus Activity">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 12: Campus Computer Lab Session -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="training" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/IMG_20260621_130940071.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Practical Coding Session in Campus Computer Lab" title="Practical Coding Session in Campus Computer Lab">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 13: Campus Workshop & PitchFest -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="workshop" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/IMG_20260621_130645494.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Buddha Startup PitchFest & Seminar Workshop" title="Buddha Startup PitchFest & Seminar Workshop">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 14: Workshop Seminar Auditorium -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="workshop" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/digicoders-workshop-seminar-auditorium.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="DigiCoders Seminar and Workshop Batch" title="DigiCoders Seminar and Workshop Batch">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 15: Workshop Felicitation Bouquet -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="workshop" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/digicoders-workshop-felicitation-bouquet.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Workshop Speaker Felicitation Ceremony" title="Workshop Speaker Felicitation Ceremony">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 16: Workshop Award Memento Presentation -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="workshop" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/digicoders-workshop-memento-award.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Workshop Honor Memento Award Presentation" title="Workshop Honor Memento Award Presentation">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 17: Incubation Cell Felicitation -->
+                <div class="col-lg-3 col-md-4 col-6 gallery-item" data-category="workshop" data-aos="zoom-in">
+                    <div class="glass-card overflow-hidden" style="border-radius: 6px;">
+                        <div class="position-relative overflow-hidden"
+                            style="height: 200px; background: rgba(0, 0, 0, 0.05); cursor: pointer;">
+                            <img src="{{ asset('assets/gallery/digicoders-workshop-incubation-cell.jpg') }}"
+                                class="w-100 h-100 object-fit-cover gallery-img" alt="Buddha Incubation Cell Workshop Felicitation" title="Buddha Incubation Cell Workshop Felicitation">
                         </div>
                     </div>
                 </div>

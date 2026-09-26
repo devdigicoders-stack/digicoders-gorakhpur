@@ -356,6 +356,20 @@ class DatabaseSeeder extends Seeder
             ['title' => 'Annual Certificate and Award Distribution Ceremony', 'image' => 'assets/gallery/digicoders-gorakhpur-placement.jpeg', 'category' => 'placement'],
             ['title' => 'Collaborative Brainstorming in Meeting Room', 'image' => 'assets/gallery/digicoders-gorakhpur-hr-department-office.jpeg', 'category' => 'campus'],
             ['title' => 'Modern IT Labs and Startup Workspace Environment', 'image' => 'assets/gallery/digicoders-gorakhpur-office-front-view.jpeg', 'category' => 'campus'],
+            ['title' => 'DigiCoders Team & Students at Buddha Institute Gate', 'image' => 'assets/gallery/IMG_20260621_145013355_HDR.jpg', 'category' => 'campus'],
+            ['title' => 'DigiCoders Campus Training Batch Photo', 'image' => 'assets/gallery/IMG_20260621_144441237_HDR.jpg', 'category' => 'campus'],
+            ['title' => 'DigiCoders Trainers & Students Campus Activity', 'image' => 'assets/gallery/IMG_20260621_144534502_HDR.jpg', 'category' => 'campus'],
+            ['title' => 'Practical Coding Session in Campus Computer Lab', 'image' => 'assets/gallery/IMG_20260621_130940071.jpg', 'category' => 'campus'],
+            ['title' => 'Buddha Startup PitchFest & Seminar Workshop', 'image' => 'assets/gallery/IMG_20260621_130645494.jpg', 'category' => 'workshop'],
+            ['title' => 'Placement Drive & Hiring Interview Session', 'image' => 'assets/gallery/digicoders-placement-drive-hiring-interview.jpg', 'category' => 'placement'],
+            ['title' => 'Placement Interview Session Web Dev Team', 'image' => 'assets/gallery/digicoders-placement-web-dev-interview.jpg', 'category' => 'placement'],
+            ['title' => 'Placement Interview Round Table Discussion', 'image' => 'assets/gallery/digicoders-placement-app-dev-round-table.jpg', 'category' => 'placement'],
+            ['title' => 'Technical Panel Interview Session', 'image' => 'assets/gallery/digicoders-placement-technical-panel-interview.jpg', 'category' => 'placement'],
+            ['title' => 'One-on-One Technical Interview Evaluation', 'image' => 'assets/gallery/digicoders-placement-one-on-one-interview.jpg', 'category' => 'placement'],
+            ['title' => 'DigiCoders Seminar and Workshop Batch in Auditorium', 'image' => 'assets/gallery/digicoders-workshop-seminar-auditorium.jpg', 'category' => 'workshop'],
+            ['title' => 'Workshop Speaker Felicitation Ceremony', 'image' => 'assets/gallery/digicoders-workshop-felicitation-bouquet.jpg', 'category' => 'workshop'],
+            ['title' => 'Workshop Honor Memento Award Presentation', 'image' => 'assets/gallery/digicoders-workshop-memento-award.jpg', 'category' => 'workshop'],
+            ['title' => 'Buddha Incubation Cell Workshop Felicitation', 'image' => 'assets/gallery/digicoders-workshop-incubation-cell.jpg', 'category' => 'workshop'],
         ];
 
         foreach ($galleryItems as $item) {
